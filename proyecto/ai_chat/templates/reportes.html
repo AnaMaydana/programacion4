@@ -1,0 +1,1234 @@
+{% load l10n %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes del Sistema (RF-06) - Supermercado Don Ahorro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root, [data-theme="dark"] {
+            --bg-main: #0e1117;
+            --bg-card: rgba(26, 30, 41, 0.95);
+            --bg-card-hover: rgba(36, 42, 56, 0.95);
+            --bg-topbar: rgba(14, 17, 23, 0.95);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --primary: #ff4b4b;
+            --primary-hover: #e03535;
+            --primary-glow: rgba(255, 75, 75, 0.3);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --input-bg: #161922;
+            --input-border: rgba(255, 255, 255, 0.14);
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --table-hover: rgba(255, 255, 255, 0.03);
+            --radius-lg: 14px;
+            --radius-md: 10px;
+            --radius-sm: 8px;
+        }
+
+        [data-theme="light"] {
+            --bg-main: #f1f5f9;
+            --bg-card: #ffffff;
+            --bg-card-hover: #f8fafc;
+            --bg-topbar: #ffffff;
+            --border-color: #cbd5e1;
+            --primary: #dc2626;
+            --primary-hover: #b91c1c;
+            --primary-glow: rgba(220, 38, 38, 0.2);
+            --text-primary: #0f172a;
+            --text-secondary: #334155;
+            --text-muted: #64748b;
+            --input-bg: #ffffff;
+            --input-border: #94a3b8;
+            --success: #059669;
+            --warning: #d97706;
+            --danger: #dc2626;
+            --table-hover: #f8fafc;
+            --radius-lg: 14px;
+            --radius-md: 10px;
+            --radius-sm: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.25s ease, color 0.25s ease;
+        }
+
+        /* Navegación Superior */
+        .navbar {
+            background: var(--bg-topbar);
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .brand-icon {
+            background: linear-gradient(135deg, var(--primary), #b91c1c);
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            box-shadow: 0 4px 14px var(--primary-glow);
+        }
+
+        .brand-title {
+            font-size: 1.15rem;
+            font-weight: 800;
+            letter-spacing: -0.3px;
+        }
+
+        .brand-sub {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .nav-center {
+            display: flex;
+            gap: 8px;
+            background: var(--input-bg);
+            padding: 4px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .nav-btn {
+            padding: 7px 16px;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 0.88rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-btn:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-btn.active {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 2px 8px var(--primary-glow);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-fullscreen {
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+
+        .btn-fullscreen:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-theme {
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 8px 12px;
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-theme:hover {
+            border-color: var(--primary);
+        }
+
+        /* Contenedor Principal Amplio (Pantalla Completa) */
+        .dashboard-container {
+            flex: 1;
+            width: 100%;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Cabecera del Reporte */
+        .report-header-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .report-header-titles h1 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            color: var(--text-primary);
+        }
+
+        .report-header-titles p {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .report-header-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-action-outline {
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 9px 16px;
+            border-radius: var(--radius-sm);
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .btn-action-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Métricas Rápidas (KPIs) */
+        .kpi-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .kpi-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .kpi-box-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .kpi-box-val {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .kpi-box-val.success { color: var(--success); }
+        .kpi-box-val.warning { color: var(--warning); }
+        .kpi-box-val.primary { color: var(--primary); }
+
+        /* Barra de Pestañas de los 8 Reportes */
+        .strategy-tabs-bar {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 8px;
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .strategy-tab {
+            background: transparent;
+            border: 1px solid transparent;
+            color: var(--text-secondary);
+            padding: 10px 18px;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .strategy-tab:hover {
+            color: var(--text-primary);
+            background: var(--input-bg);
+            border-color: var(--border-color);
+        }
+
+        .strategy-tab.active {
+            background: var(--primary);
+            color: #ffffff;
+            box-shadow: 0 4px 12px var(--primary-glow);
+            border-color: var(--primary);
+        }
+
+        /* Tarjeta de Contenido del Reporte */
+        .report-body-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-height: 480px;
+        }
+
+        .report-summary-banner {
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--primary);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+        }
+
+        .report-summary-banner h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        .report-summary-banner p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Filtro de Búsqueda Interno del Reporte */
+        .table-filter-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .filter-input-wrap {
+            position: relative;
+            max-width: 380px;
+            width: 100%;
+        }
+
+        .filter-input {
+            width: 100%;
+            background: var(--input-bg);
+            border: 1px solid var(--input-border);
+            color: var(--text-primary);
+            padding: 9px 14px 9px 36px;
+            border-radius: var(--radius-sm);
+            font-size: 0.88rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .filter-input:focus {
+            border-color: var(--primary);
+        }
+
+        .filter-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            pointer-events: none;
+        }
+
+        .table-count-badge {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Tabla de Reportes Amplia */
+        .report-table-wrapper {
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+        }
+
+        .report-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            text-align: left;
+        }
+
+        .report-table th {
+            background: var(--input-bg);
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .report-table td {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-primary);
+            vertical-align: middle;
+        }
+
+        .report-table tr:hover {
+            background: var(--table-hover);
+        }
+
+        /* Badges de código, categoría y precio */
+        .product-code {
+            font-family: monospace;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border-color);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .badge-category {
+            background: rgba(59, 130, 246, 0.12);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .badge-price {
+            font-weight: 700;
+            color: var(--success);
+            font-size: 0.96rem;
+        }
+
+        .stock-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .stock-optimo {
+            background: rgba(16, 185, 129, 0.12);
+            color: var(--success);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+        }
+
+        .stock-critico {
+            background: rgba(245, 158, 11, 0.12);
+            color: var(--warning);
+            border: 1px solid rgba(245, 158, 11, 0.25);
+        }
+
+        .stock-agotado {
+            background: rgba(239, 68, 68, 0.12);
+            color: var(--danger);
+            border: 1px solid rgba(239, 68, 68, 0.25);
+        }
+
+        /* Ficha Destacada de Producto Único (Más Caro / Más Barato) */
+        .single-product-hero {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            padding: 10px 0;
+        }
+
+        .single-product-kpi {
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 18px;
+        }
+
+        .single-product-kpi .lbl {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .single-product-kpi .val {
+            font-size: 1.35rem;
+            font-weight: 800;
+            margin-top: 6px;
+            color: var(--text-primary);
+        }
+
+        /* Selector de Modo para Ranking de Precios (Top 1 vs Top 5) */
+        .view-mode-selector {
+            display: inline-flex;
+            gap: 6px;
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            padding: 4px;
+            border-radius: var(--radius-sm);
+        }
+
+        .btn-mode {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            padding: 7px 15px;
+            border-radius: 6px;
+            font-size: 0.84rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-mode:hover {
+            color: var(--text-primary);
+        }
+
+        .btn-mode.active {
+            background: var(--primary);
+            color: #ffffff;
+            box-shadow: 0 2px 8px var(--primary-glow);
+        }
+
+        /* Badges de Ranking Top 5 */
+        .rank-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            font-weight: 800;
+            font-size: 0.82rem;
+        }
+
+        .rank-1 { background: rgba(245, 158, 11, 0.22); color: #f59e0b; border: 1px solid #f59e0b; }
+        .rank-2 { background: rgba(148, 163, 184, 0.22); color: #cbd5e1; border: 1px solid #94a3b8; }
+        .rank-3 { background: rgba(217, 119, 6, 0.22); color: #d97706; border: 1px solid #d97706; }
+        .rank-other { background: rgba(255, 255, 255, 0.05); color: var(--text-muted); border: 1px solid var(--border-color); }
+
+        /* Chips interactivos para el reporte Por Categoría */
+        .category-chips-bar {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .category-chip {
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-size: 0.84rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .category-chip:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .category-chip.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+            box-shadow: 0 2px 8px var(--primary-glow);
+        }
+
+        /* Impresión Limpia */
+        @media print {
+            .navbar, .strategy-tabs-bar, .report-header-actions, .filter-input-wrap {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            .dashboard-container {
+                padding: 0 !important;
+            }
+            .report-body-card, .report-header-card {
+                border: none !important;
+                box-shadow: none !important;
+                background: white !important;
+            }
+            .report-table th, .report-table td {
+                color: black !important;
+                border-color: #ddd !important;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .nav-center { display: none; }
+            .dashboard-container { padding: 16px; }
+            .report-header-titles h1 { font-size: 1.35rem; }
+        }
+
+        @media (max-width: 640px) {
+            .kpi-row { grid-template-columns: 1fr 1fr; }
+            .report-header-card { flex-direction: column; align-items: stretch; }
+            .strategy-tab { padding: 8px 12px; font-size: 0.82rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Superior -->
+    <nav class="navbar">
+        <a href="/inventario/" class="nav-brand">
+            <div class="brand-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+            </div>
+            <div>
+                <div class="brand-title">Supermercado Don Ahorro</div>
+                <div class="brand-sub">Módulo de Reportes & Estrategias Analíticas</div>
+            </div>
+        </a>
+
+        <div class="nav-center">
+            <a href="/" class="nav-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Inventario</span>
+            </a>
+            <a href="/reportes/" class="nav-btn active">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+                <span>Reportes del Sistema</span>
+            </a>
+            <a href="/chat/" class="nav-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Consultas IA (Chatbot)</span>
+            </a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="btn-theme" onclick="alternarTema()" title="Cambiar tema claro/oscuro">
+                <span id="themeText">Modo Claro</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <main class="dashboard-container" id="mainDashboard">
+
+        <!-- Cabecera de Reportes -->
+        <section class="report-header-card">
+            <div class="report-header-titles">
+                <h1>Reportes Analíticos del Inventario (RF-06)</h1>
+                <p>Cálculos en tiempo real implementados mediante el Patrón de Diseño Strategy sobre la base de datos SQLite.</p>
+            </div>
+            <div class="report-header-actions">
+                <button class="btn-action-outline" onclick="window.print()" title="Imprimir o guardar como PDF">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                        <rect x="6" y="14" width="12" height="8"></rect>
+                    </svg>
+                    <span>Imprimir Reporte</span>
+                </button>
+                <button class="btn-action-outline" onclick="exportarTablaCSV()" title="Exportar datos a CSV">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Exportar CSV</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Métricas Rápidas Globales -->
+        <section class="kpi-row">
+            <div class="kpi-box">
+                <div class="kpi-box-title">Valor Total del Inventario</div>
+                <div class="kpi-box-val success">Bs. {{ kpis.valor_total_inventario|floatformat:2 }}</div>
+            </div>
+            <div class="kpi-box">
+                <div class="kpi-box-title">Total Unidades Físicas</div>
+                <div class="kpi-box-val primary">{{ kpis.total_unidades }} u.</div>
+            </div>
+            <div class="kpi-box">
+                <div class="kpi-box-title">Catálogo de Productos</div>
+                <div class="kpi-box-val">{{ kpis.total_productos }} ítems</div>
+            </div>
+            <div class="kpi-box">
+                <div class="kpi-box-title">Alertas de Reposición</div>
+                <div class="kpi-box-val warning">{{ kpis.stock_critico_count }} productos</div>
+            </div>
+        </section>
+
+        <!-- Barra de Selección de los 8 Reportes Strategy -->
+        <nav class="strategy-tabs-bar" role="tablist">
+            <button class="strategy-tab active" onclick="seleccionarReporte('valor_total', this)">
+                <span>1. Valor Total</span>
+            </button>
+            <button class="strategy-tab" onclick="seleccionarReporte('mas_caro', this)">
+                <span>2. Más Caro</span>
+            </button>
+            <button class="strategy-tab" onclick="seleccionarReporte('mas_barato', this)">
+                <span>3. Más Barato</span>
+            </button>
+            <button class="strategy-tab" onclick="seleccionarReporte('pocas_existencias', this)">
+                <span>4. Pocas Existencias</span>
+            </button>
+            <button class="strategy-tab" onclick="seleccionarReporte('agotados', this)">
+                <span>5. Agotados</span>
+            </button>
+            <button class="strategy-tab" onclick="seleccionarReporte('por_categoria', this)">
+                <span>6. Por Categoría</span>
+            </button>
+            <button class="strategy-tab" onclick="seleccionarReporte('mayor_cantidad', this)">
+                <span>7. Mayor Stock</span>
+            </button>
+            <button class="strategy-tab" onclick="seleccionarReporte('todos', this)">
+                <span>8. Listar Todos</span>
+            </button>
+        </nav>
+
+        <!-- Tarjeta Principal del Reporte Activo (Pantalla Completa) -->
+        <section class="report-body-card">
+            <!-- Banner Resumen Ejecutivo del Reporte -->
+            <div class="report-summary-banner" id="reporteBanner">
+                <h3 id="reporteTitulo">{{ datos_iniciales.titulo }}</h3>
+                <p id="reporteResumenTexto">{{ resumen_inicial }}</p>
+            </div>
+
+            <!-- Barra de Filtro en Vivo dentro del Reporte -->
+            <div class="table-filter-bar" id="reporteFilterBar">
+                <div class="filter-input-wrap">
+                    <svg class="filter-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" class="filter-input" id="reportSearchInput" placeholder="Filtrar resultados en este reporte..." oninput="filtrarTablaReporte()">
+                </div>
+                <div class="table-count-badge" id="reportCountBadge">
+                    Mostrando resultados en tiempo real
+                </div>
+            </div>
+
+            <!-- Contenedor Dinámico de la Tabla o Ficha del Reporte -->
+            <div id="reporteDinamicoContenedor">
+                <!-- Se inyecta dinámicamente con JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        let reporteActual = 'valor_total';
+        let datosActualesCache = null;
+
+        // Inicializar Tema Claro / Oscuro sincronizado
+        function inicializarTema() {
+            const guardado = localStorage.getItem('chat_tema') || 'dark';
+            document.documentElement.setAttribute('data-theme', guardado);
+            actualizarTextoTema(guardado);
+        }
+
+        function alternarTema() {
+            const actual = document.documentElement.getAttribute('data-theme') || 'dark';
+            const nuevo = actual === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', nuevo);
+            localStorage.setItem('chat_tema', nuevo);
+            actualizarTextoTema(nuevo);
+        }
+
+        function actualizarTextoTema(tema) {
+            const el = document.getElementById('themeText');
+            if (el) el.innerText = tema === 'dark' ? 'Modo Claro' : 'Modo Oscuro';
+        }
+
+        // Cambiar de Reporte
+        async function seleccionarReporte(tipo, btnEl) {
+            reporteActual = tipo;
+            window.categoriaSeleccionada = 'todas';
+            window.modoPrecioActual = 1;
+
+            document.querySelectorAll('.strategy-tab').forEach(t => t.classList.remove('active'));
+            if (btnEl) btnEl.classList.add('active');
+
+            const contenedor = document.getElementById('reporteDinamicoContenedor');
+            contenedor.innerHTML = '<div style="text-align:center; padding: 40px; color: var(--text-muted); font-size:1rem;">Generando reporte mediante el Patrón Strategy...</div>';
+
+            try {
+                const res = await fetch(`/api/reportes/?tipo=${tipo}`);
+                const resJson = await res.json();
+                if (res.ok && resJson.status === 'ok') {
+                    datosActualesCache = resJson;
+                    renderizarReporte(resJson.datos, resJson.resumen_texto);
+                } else {
+                    contenedor.innerHTML = `<div style="color:var(--danger); padding:20px;">Error al cargar el reporte: ${resJson.error || 'Desconocido'}</div>`;
+                }
+            } catch (err) {
+                contenedor.innerHTML = `<div style="color:var(--danger); padding:20px;">Error de red al consultar el endpoint del reporte.</div>`;
+            }
+        }
+
+        // Alternar modo de precio (Top 1 individual vs Top 5 ranking)
+        function cambiarModoPrecio(modo) {
+            window.modoPrecioActual = modo;
+            if (datosActualesCache && (datosActualesCache.tipo === 'mas_caro' || datosActualesCache.tipo === 'mas_barato')) {
+                renderizarReporte(datosActualesCache.datos, datosActualesCache.resumen_texto);
+            }
+        }
+
+        // Filtrar por chip de categoría
+        function filtrarCategoriaPill(cat) {
+            window.categoriaSeleccionada = cat;
+            if (datosActualesCache && (datosActualesCache.tipo === 'por_categoria' || (datosActualesCache.datos && datosActualesCache.datos.categorias))) {
+                renderizarReporte(datosActualesCache.datos, datosActualesCache.resumen_texto);
+            }
+        }
+
+        // Renderizado del Reporte en la Página
+        function renderizarReporte(datos, resumenTexto) {
+            document.getElementById('reporteTitulo').innerText = datos.titulo || 'Reporte del Inventario';
+            document.getElementById('reporteResumenTexto').innerHTML = resumenTexto.replace(/\n/g, '<br>');
+
+            const contenedor = document.getElementById('reporteDinamicoContenedor');
+            const searchInput = document.getElementById('reportSearchInput');
+            if (searchInput) searchInput.value = '';
+
+            // Caso 1: Reportes de Precio Extremo (Más Caro o Más Barato con opción de Top 1 o Top 5)
+            if (datos.tipo === 'mas_caro' || datos.tipo === 'mas_barato') {
+                const p = datos.producto;
+                if (!p) {
+                    contenedor.innerHTML = '<div style="text-align:center; padding: 40px; color:var(--text-muted);">No se encontraron productos registrados.</div>';
+                    return;
+                }
+
+                const top5 = datos.top_5 || [p];
+                const esMasCaro = datos.tipo === 'mas_caro';
+                const labelExtremo = esMasCaro ? 'Más Caros' : 'Más Baratos';
+                window.modoPrecioActual = window.modoPrecioActual || 1;
+
+                if (window.modoPrecioActual === 1) {
+                    document.getElementById('reporteFilterBar').style.display = 'none';
+                    contenedor.innerHTML = `
+                        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+                            <div class="view-mode-selector">
+                                <button class="btn-mode active" onclick="cambiarModoPrecio(1)">
+                                    Ver Producto #1 (${esMasCaro ? 'Más Caro' : 'Más Barato'})
+                                </button>
+                                <button class="btn-mode" onclick="cambiarModoPrecio(5)">
+                                    Ver los 5 ${labelExtremo} (Ranking)
+                                </button>
+                            </div>
+                            <div style="font-size:0.85rem; color:var(--text-secondary); font-weight:600;">
+                                Criterio: Precio unitario ${esMasCaro ? 'máximo' : 'mínimo'}
+                            </div>
+                        </div>
+
+                        <div class="single-product-hero">
+                            <div class="single-product-kpi">
+                                <div class="lbl">Código / SKU</div>
+                                <div class="val"><span class="product-code">${p.codigo}</span></div>
+                            </div>
+                            <div class="single-product-kpi">
+                                <div class="lbl">Nombre Comercial</div>
+                                <div class="val" style="font-size:1.15rem;">${p.nombre}</div>
+                            </div>
+                            <div class="single-product-kpi">
+                                <div class="lbl">Categoría</div>
+                                <div class="val"><span class="badge-category">${p.categoria}</span></div>
+                            </div>
+                            <div class="single-product-kpi">
+                                <div class="lbl">Precio Oficial</div>
+                                <div class="val" style="color:var(--success);">Bs. ${Number(p.precio).toFixed(2)}</div>
+                            </div>
+                            <div class="single-product-kpi">
+                                <div class="lbl">Existencias en Almacén</div>
+                                <div class="val">${p.stock} ${p.unidad_medida}</div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top:20px; display:flex; justify-content:flex-end;">
+                            <button class="btn-action-outline" onclick="cambiarModoPrecio(5)" style="background:var(--input-bg);">
+                                Ver el ranking completo con los 5 ${labelExtremo} &rarr;
+                            </button>
+                        </div>
+                    `;
+                    return;
+                } else {
+                    // Modo Top 5 Ranking
+                    document.getElementById('reporteFilterBar').style.display = 'none';
+                    let html = `
+                        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+                            <div class="view-mode-selector">
+                                <button class="btn-mode" onclick="cambiarModoPrecio(1)">
+                                    Ver Producto #1 (${esMasCaro ? 'Más Caro' : 'Más Barato'})
+                                </button>
+                                <button class="btn-mode active" onclick="cambiarModoPrecio(5)">
+                                    Ver los 5 ${labelExtremo} (Ranking)
+                                </button>
+                            </div>
+                            <div style="font-size:0.85rem; color:var(--text-secondary); font-weight:600;">
+                                Top 5 productos con ${esMasCaro ? 'mayor' : 'menor'} precio del catálogo
+                            </div>
+                        </div>
+
+                        <div class="report-table-wrapper">
+                            <table class="report-table" id="tablaReporteActual">
+                                <thead>
+                                    <tr>
+                                        <th style="width:65px; text-align:center;">Puesto</th>
+                                        <th>Código</th>
+                                        <th>Nombre del Producto</th>
+                                        <th>Categoría</th>
+                                        <th style="text-align:right;">Precio</th>
+                                        <th style="text-align:right;">Stock</th>
+                                        <th>Estado de Existencia</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                    `;
+
+                    top5.forEach((it, idx) => {
+                        const rankClass = idx === 0 ? 'rank-1' : (idx === 1 ? 'rank-2' : (idx === 2 ? 'rank-3' : 'rank-other'));
+                        const st = Number(it.stock !== undefined ? it.stock : 0);
+                        let pillClass = 'stock-optimo';
+                        let pillTxt = 'Óptimo';
+                        if (st <= 0) { pillClass = 'stock-agotado'; pillTxt = 'Agotado'; }
+                        else if (st <= 5) { pillClass = 'stock-critico'; pillTxt = 'Crítico'; }
+
+                        html += `
+                            <tr>
+                                <td style="text-align:center;">
+                                    <span class="rank-badge ${rankClass}">${idx + 1}°</span>
+                                </td>
+                                <td><span class="product-code">${it.codigo}</span></td>
+                                <td style="font-weight:700;">${it.nombre}</td>
+                                <td><span class="badge-category">${it.categoria}</span></td>
+                                <td style="text-align:right;"><span class="badge-price">Bs. ${Number(it.precio).toFixed(2)}</span></td>
+                                <td style="text-align:right; font-weight:700;">${it.stock} ${it.unidad_medida}</td>
+                                <td><span class="stock-pill ${pillClass}">${pillTxt}</span></td>
+                            </tr>
+                        `;
+                    });
+
+                    html += `
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="margin-top:16px;">
+                            <button class="btn-action-outline" onclick="cambiarModoPrecio(1)">
+                                &larr; Volver a ficha individual del Producto #1
+                            </button>
+                        </div>
+                    `;
+                    contenedor.innerHTML = html;
+                    return;
+                }
+            }
+
+            // Caso 2: Reporte de Valor Total
+            if (datos.tipo === 'valor_total') {
+                document.getElementById('reporteFilterBar').style.display = 'none';
+                contenedor.innerHTML = `
+                    <div class="single-product-hero">
+                        <div class="single-product-kpi">
+                            <div class="lbl">Valor Monetario Total</div>
+                            <div class="val" style="color:var(--success); font-size:1.8rem;">Bs. ${Number(datos.valor_total_bs).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                        </div>
+                        <div class="single-product-kpi">
+                            <div class="lbl">Total Unidades Físicas</div>
+                            <div class="val" style="color:var(--primary); font-size:1.8rem;">${datos.total_unidades} unidades</div>
+                        </div>
+                        <div class="single-product-kpi">
+                            <div class="lbl">Productos Registrados</div>
+                            <div class="val" style="font-size:1.8rem;">${datos.total_productos} ítems</div>
+                        </div>
+                        <div class="single-product-kpi">
+                            <div class="lbl">Precio Promedio Unitario</div>
+                            <div class="val" style="font-size:1.8rem;">Bs. ${Number(datos.precio_promedio).toFixed(2)}</div>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            // Caso 3: Reporte Por Categoría
+            if (datos.tipo === 'por_categoria' || datos.categorias) {
+                document.getElementById('reporteFilterBar').style.display = 'flex';
+                window.categoriaSeleccionada = window.categoriaSeleccionada || 'todas';
+
+                const cats = datos.categorias || [];
+                const todosLosItems = datos.items || [];
+
+                let html = `
+                    <div class="category-chips-bar" id="categoryChipsBar">
+                        <button class="category-chip ${window.categoriaSeleccionada === 'todas' ? 'active' : ''}" onclick="filtrarCategoriaPill('todas')">
+                            Todas las Categorías (${todosLosItems.length})
+                        </button>
+                `;
+
+                cats.forEach(c => {
+                    const isActive = window.categoriaSeleccionada === c.categoria;
+                    html += `
+                        <button class="category-chip ${isActive ? 'active' : ''}" onclick="filtrarCategoriaPill('${c.categoria.replace(/'/g, "\\'")}')">
+                            ${c.categoria} (${c.total_productos})
+                        </button>
+                    `;
+                });
+
+                html += `</div>`;
+
+                let itemsAMostrar = todosLosItems;
+                if (window.categoriaSeleccionada !== 'todas') {
+                    itemsAMostrar = todosLosItems.filter(it => it.categoria === window.categoriaSeleccionada);
+                }
+
+                document.getElementById('reportCountBadge').innerText = `Mostrando: ${itemsAMostrar.length} productos en "${window.categoriaSeleccionada === 'todas' ? 'Todas las Categorías' : window.categoriaSeleccionada}"`;
+
+                html += `
+                    <div class="report-table-wrapper">
+                        <table class="report-table" id="tablaReporteActual">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Nombre del Producto</th>
+                                    <th>Categoría</th>
+                                    <th style="text-align:right;">Precio</th>
+                                    <th style="text-align:right;">Stock</th>
+                                    <th>Estado de Existencia</th>
+                                </tr>
+                            </thead>
+                            <tbody id="reportTableBody">
+                `;
+
+                itemsAMostrar.forEach(it => {
+                    let pillClass = 'stock-optimo';
+                    let pillTxt = 'Óptimo';
+                    const st = Number(it.stock !== undefined ? it.stock : 0);
+                    if (st <= 0) { pillClass = 'stock-agotado'; pillTxt = 'Agotado'; }
+                    else if (st <= 5) { pillClass = 'stock-critico'; pillTxt = 'Crítico'; }
+
+                    html += `
+                        <tr>
+                            <td><span class="product-code">${it.codigo}</span></td>
+                            <td style="font-weight:600;">${it.nombre}</td>
+                            <td><span class="badge-category">${it.categoria}</span></td>
+                            <td style="text-align:right;"><span class="badge-price">Bs. ${Number(it.precio || 0).toFixed(2)}</span></td>
+                            <td style="text-align:right; font-weight:700;">${it.stock} ${it.unidad_medida || ''}</td>
+                            <td><span class="stock-pill ${pillClass}">${pillTxt}</span></td>
+                        </tr>
+                    `;
+                });
+
+                html += `
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+
+                contenedor.innerHTML = html;
+                return;
+            }
+
+            // Caso 4: Listados Múltiples (Pocas existencias, Agotados, Mayor Stock, Listar Todos)
+            document.getElementById('reporteFilterBar').style.display = 'flex';
+            const items = datos.items || [];
+            document.getElementById('reportCountBadge').innerText = `Total registros: ${items.length} productos`;
+
+            if (items.length === 0) {
+                contenedor.innerHTML = '<div style="text-align:center; padding: 40px; color:var(--text-muted);">No se encontraron productos para este criterio.</div>';
+                return;
+            }
+
+            let html = `
+                <div class="report-table-wrapper">
+                    <table class="report-table" id="tablaReporteActual">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Nombre del Producto</th>
+                                <th>Categoría</th>
+                                <th style="text-align:right;">Precio</th>
+                                <th style="text-align:right;">Stock</th>
+                                <th>Estado de Existencia</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reportTableBody">
+            `;
+
+            items.forEach(it => {
+                let pillClass = 'stock-optimo';
+                let pillTxt = 'Óptimo';
+                const st = Number(it.stock !== undefined ? it.stock : 0);
+                const stMin = Number(it.stock_minimo !== undefined ? it.stock_minimo : 5);
+
+                if (st <= 0) {
+                    pillClass = 'stock-agotado';
+                    pillTxt = 'Agotado';
+                } else if (st <= stMin) {
+                    pillClass = 'stock-critico';
+                    pillTxt = 'Crítico';
+                }
+
+                html += `
+                    <tr>
+                        <td><span class="product-code">${it.codigo}</span></td>
+                        <td style="font-weight:600;">${it.nombre}</td>
+                        <td><span class="badge-category">${it.categoria || '-'}</span></td>
+                        <td style="text-align:right;"><span class="badge-price">Bs. ${Number(it.precio || 0).toFixed(2)}</span></td>
+                        <td style="text-align:right; font-weight:700;">${it.stock} ${it.unidad_medida || ''}</td>
+                        <td><span class="stock-pill ${pillClass}">${pillTxt}</span></td>
+                    </tr>
+                `;
+            });
+
+            html += `
+                        </tbody>
+                    </table>
+                </div>
+            `;
+            contenedor.innerHTML = html;
+        }
+
+        // Filtro en tiempo real dentro del reporte activo
+        function filtrarTablaReporte() {
+            const query = (document.getElementById('reportSearchInput').value || '').toLowerCase();
+            const filas = document.querySelectorAll('#reportTableBody tr');
+            let visibles = 0;
+            filas.forEach(f => {
+                const txt = f.innerText.toLowerCase();
+                if (txt.includes(query)) {
+                    f.style.display = '';
+                    visibles++;
+                } else {
+                    f.style.display = 'none';
+                }
+            });
+            const badge = document.getElementById('reportCountBadge');
+            if (badge) {
+                badge.innerText = `Filtrados: ${visibles} de ${filas.length} productos`;
+            }
+        }
+
+        // Exportar a CSV en el navegador
+        function exportarTablaCSV() {
+            const table = document.getElementById('tablaReporteActual');
+            if (!table) {
+                alert('El reporte actual no contiene una tabla tabular para exportar. Selecciona un reporte con tabla o cambia a la vista Top 5.');
+                return;
+            }
+            let csv = [];
+            const rows = table.querySelectorAll('tr');
+            rows.forEach(r => {
+                const cols = r.querySelectorAll('th, td');
+                const rowData = [];
+                cols.forEach(c => {
+                    let text = c.innerText.replace(/"/g, '""').trim();
+                    rowData.push(`"${text}"`);
+                });
+                csv.push(rowData.join(','));
+            });
+            const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = `reporte_${reporteActual}_${new Date().toISOString().slice(0,10)}.csv`;
+            link.click();
+        }
+
+        // Inicializar al cargar la página
+        inicializarTema();
+        // Cargar el reporte inicial
+        seleccionarReporte('valor_total', document.querySelector('.strategy-tab'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,2522 @@
+[
+{
+  "model": "ai_chat.chatsession",
+  "pk": 41,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-22T13:56:06.675Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 42,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-22T14:11:09.443Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 43,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-22T14:13:26.866Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 44,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-22T14:14:11.074Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 45,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-22T14:27:51.453Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 46,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:09:27.112Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 47,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:13:47.590Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 48,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:26:16.268Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 49,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:35:43.278Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 50,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:46:02.030Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 51,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:46:19.729Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 52,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:47:38.046Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 53,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:47:44.517Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 54,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:47:48.550Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 55,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:48:24.054Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 56,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:50:18.300Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 57,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:53:39.461Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 58,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T19:57:39.273Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 59,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T20:07:27.689Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 60,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T20:07:54.264Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 61,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T20:07:59.663Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 62,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T20:08:21.558Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 63,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T20:08:25.941Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 64,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T20:24:57.021Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 65,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T20:34:33.859Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 66,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T20:43:30.243Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 67,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T20:49:27.238Z"
+  }
+},
+{
+  "model": "ai_chat.chatsession",
+  "pk": 68,
+  "fields": {
+    "user": "Usuario",
+    "created_at": "2026-09-27T21:25:56.882Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 158,
+  "fields": {
+    "session": 41,
+    "sender": "Usuario",
+    "message": "LISTA DE PRODUCTOS DE CARNES Y AVES",
+    "timestamp": "2026-09-22T13:56:06.695Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 159,
+  "fields": {
+    "session": 41,
+    "sender": "Asistente",
+    "message": "**Productos en la categoría Carnes y Aves** (5 ítems):\n\n• **Jamón Serrano Gran Reserva Selección 1kg** (CAR-005): Bs. 42.00 (Stock: 2 Kg)\n• **Corte Lomo Fino de Res Premium 1kg** (CAR-002): Bs. 18.50 (Stock: 8 Kg)\n• **Chuleta de Cerdo Ahumada 1kg** (CAR-004): Bs. 7.40 (Stock: 11 Kg)\n• **Carne Molida Especial 1kg** (CAR-003): Bs. 6.80 (Stock: 15 Kg)\n• **Pechuga de Pollo Fresca 1kg** (CAR-001): Bs. 5.20 (Stock: 22 Kg)",
+    "timestamp": "2026-09-22T13:56:06.707Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 160,
+  "fields": {
+    "session": 41,
+    "sender": "Usuario",
+    "message": "PRODUCTO CON STOCK MAS ALTO",
+    "timestamp": "2026-09-22T13:56:35.723Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 161,
+  "fields": {
+    "session": 41,
+    "sender": "Asistente",
+    "message": "No encontré información suficiente en el inventario para responder esa pregunta.",
+    "timestamp": "2026-09-22T13:56:35.749Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 162,
+  "fields": {
+    "session": 41,
+    "sender": "Usuario",
+    "message": "PRODUCTOS EN ESTADO CRITICO",
+    "timestamp": "2026-09-22T13:57:07.226Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 163,
+  "fields": {
+    "session": 41,
+    "sender": "Asistente",
+    "message": "No encontré información suficiente en el inventario para responder esa pregunta.",
+    "timestamp": "2026-09-22T13:57:07.279Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 164,
+  "fields": {
+    "session": 41,
+    "sender": "Usuario",
+    "message": "LISTA DE BEBIDAS",
+    "timestamp": "2026-09-22T13:57:22.899Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 165,
+  "fields": {
+    "session": 41,
+    "sender": "Asistente",
+    "message": "**Productos en la categoría Bebidas y Licores** (5 ítems):\n\n• **Whisky Escocés Single Malt 12 Años 750ml** (BEB-005): Bs. 58.00 (Stock: 5 Botella)\n• **Cerveza Artesanal IPA Pack x6 330ml** (BEB-004): Bs. 9.80 (Stock: 14 Six-pack)\n• **Jugo de Naranja 100% Natural 1L** (BEB-003): Bs. 2.65 (Stock: 19 Envase)\n• **Refresco Coca-Cola Original 2L** (BEB-002): Bs. 2.10 (Stock: 45 Botella)\n• **Agua Mineral Sin Gas 1.5L** (BEB-001): Bs. 0.75 (Stock: 80 Botella)",
+    "timestamp": "2026-09-22T13:57:23.048Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 166,
+  "fields": {
+    "session": 41,
+    "sender": "Usuario",
+    "message": "EL PRODUCTO MA SCARO",
+    "timestamp": "2026-09-22T13:58:46.339Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 167,
+  "fields": {
+    "session": 41,
+    "sender": "Asistente",
+    "message": "No encontré información suficiente en el inventario para responder esa pregunta.",
+    "timestamp": "2026-09-22T13:58:46.362Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 168,
+  "fields": {
+    "session": 42,
+    "sender": "Usuario",
+    "message": "QUE PRODUCTOS ESTAN AGOTADOS",
+    "timestamp": "2026-09-22T14:11:09.652Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 169,
+  "fields": {
+    "session": 42,
+    "sender": "Asistente",
+    "message": "Se registraron **6 productos en alerta de stock o pocas existencias**:\n\n• **Jabón Líquido para Manos Humectante 500ml** [Limpieza y Hogar] - AGOTADO (0 unidades) - Bs. 2.15\n• **Torta de Vainilla Artesanal 1kg** [Panadería y Pastelería] - Stock: 1 Unidad (Mínimo: 3) - Bs. 14.00\n• **Jamón Serrano Gran Reserva Selección 1kg** [Carnes y Aves] - Stock: 2 Kg (Mínimo: 4) - Bs. 42.00\n• **Aceite de Oliva Extra Virgen 500ml** [Abarrotes y Despensa] - Stock: 2 Botella (Mínimo: 6) - Bs. 9.50\n• **Queso Parmesano Reggiano Importado 200g** [Lácteos y Huevos] - Stock: 3 Unidad (Mínimo: 5) - Bs. 8.90\n• **Aguacate Hass Premium 1kg** [Frutas y Verduras] - Stock: 4 Kg (Mínimo: 8) - Bs. 4.50\n\nSe sugiere programar la reposición prioritaria para garantizar el abastecimiento.",
+    "timestamp": "2026-09-22T14:11:09.694Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 170,
+  "fields": {
+    "session": 42,
+    "sender": "Usuario",
+    "message": "CUANTOS ES 2 MAS 2",
+    "timestamp": "2026-09-22T14:12:41.537Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 171,
+  "fields": {
+    "session": 42,
+    "sender": "Asistente",
+    "message": "No encontré información suficiente en el inventario para responder esa pregunta.",
+    "timestamp": "2026-09-22T14:12:41.557Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 172,
+  "fields": {
+    "session": 42,
+    "sender": "Usuario",
+    "message": "QUE ES INVENTARIO",
+    "timestamp": "2026-09-22T14:12:48.773Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 173,
+  "fields": {
+    "session": 42,
+    "sender": "Asistente",
+    "message": "No encontré información suficiente en el inventario para responder esa pregunta.",
+    "timestamp": "2026-09-22T14:12:48.794Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 174,
+  "fields": {
+    "session": 43,
+    "sender": "Usuario",
+    "message": "¿Qué productos tenemos en la categoría Lácteos y Huevos?",
+    "timestamp": "2026-09-22T14:13:26.907Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 175,
+  "fields": {
+    "session": 43,
+    "sender": "Asistente",
+    "message": "**Productos en la categoría Lácteos y Huevos** (6 ítems):\n\n• **Queso Parmesano Reggiano Importado 200g** (LAC-006): Bs. 8.90 (Stock: 3 Unidad)\n• **Queso Gouda Rebanado 250g** (LAC-002): Bs. 3.80 (Stock: 12 Paquete)\n• **Yogur Griego Natural 500g** (LAC-003): Bs. 2.90 (Stock: 18 Unidad)\n• **Huevos Frescos Extra Grandes (Docena)** (LAC-005): Bs. 2.85 (Stock: 34 Docena)\n• **Mantequilla con Sal 200g** (LAC-004): Bs. 2.40 (Stock: 25 Unidad)\n• **Leche Entera Larga Vida 1L** (LAC-001): Bs. 1.45 (Stock: 48 Litro)",
+    "timestamp": "2026-09-22T14:13:26.921Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 176,
+  "fields": {
+    "session": 43,
+    "sender": "Usuario",
+    "message": "QUE ES API",
+    "timestamp": "2026-09-22T14:13:46.879Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 177,
+  "fields": {
+    "session": 43,
+    "sender": "Asistente",
+    "message": "No encontré información suficiente en el inventario para responder esa pregunta.",
+    "timestamp": "2026-09-22T14:13:46.907Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 178,
+  "fields": {
+    "session": 44,
+    "sender": "Usuario",
+    "message": "STOCK DE ACEITE",
+    "timestamp": "2026-09-22T14:14:11.095Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 179,
+  "fields": {
+    "session": 44,
+    "sender": "Asistente",
+    "message": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 32 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "timestamp": "2026-09-22T14:14:11.114Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 180,
+  "fields": {
+    "session": 44,
+    "sender": "Usuario",
+    "message": "como como puedo hacer una receta",
+    "timestamp": "2026-09-22T14:21:21.116Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 181,
+  "fields": {
+    "session": 44,
+    "sender": "Asistente",
+    "message": "No encontré información suficiente en el inventario para responder esa pregunta.",
+    "timestamp": "2026-09-22T14:21:21.169Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 182,
+  "fields": {
+    "session": 44,
+    "sender": "Usuario",
+    "message": "lista de productos de que empiezan por le",
+    "timestamp": "2026-09-22T14:21:50.897Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 183,
+  "fields": {
+    "session": 44,
+    "sender": "Asistente",
+    "message": "No encontré información suficiente en el inventario para responder esa pregunta.",
+    "timestamp": "2026-09-22T14:21:50.931Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 184,
+  "fields": {
+    "session": 45,
+    "sender": "Usuario",
+    "message": "¿Cuál es el producto más barato?",
+    "timestamp": "2026-09-22T14:27:51.543Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 185,
+  "fields": {
+    "session": 45,
+    "sender": "Asistente",
+    "message": "El producto más barato del inventario es **Gelatina en Polvo Sabor Fresa 100g** (Código: ABA-007) de la categoría *Abarrotes y Despensa*, con un precio de **Bs. 0.45** y un stock disponible de 55 Sobre.",
+    "timestamp": "2026-09-22T14:29:26.789Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 186,
+  "fields": {
+    "session": 46,
+    "sender": "Usuario",
+    "message": "¿Cuánto cuesta el aceite y cuál es el producto más barato?",
+    "timestamp": "2026-09-27T19:09:27.245Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 187,
+  "fields": {
+    "session": 46,
+    "sender": "Asistente",
+    "message": "Tiempo de espera agotado al consultar el modelo local Ollama.",
+    "timestamp": "2026-09-27T19:10:07.743Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 188,
+  "fields": {
+    "session": 47,
+    "sender": "Usuario",
+    "message": "¿Cuál es el producto más barato?",
+    "timestamp": "2026-09-27T19:13:47.646Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 189,
+  "fields": {
+    "session": 47,
+    "sender": "Asistente",
+    "message": "El producto más barato del inventario es **Gelatina en Polvo Sabor Fresa 100g** (Código: ABA-007) de la categoría *Abarrotes y Despensa*, con un precio de **Bs. 0.45** y un stock disponible de 55 Sobre.",
+    "timestamp": "2026-09-27T19:14:38.032Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 190,
+  "fields": {
+    "session": 48,
+    "sender": "Usuario",
+    "message": "lista de los productos del mas caro al mas bajo",
+    "timestamp": "2026-09-27T19:26:16.373Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 191,
+  "fields": {
+    "session": 48,
+    "sender": "Asistente",
+    "message": "El producto más caro del inventario es **Whisky Escocés Single Malt 12 Años 750ml** (Código: BEB-005) de la categoría *Bebidas y Licores*, con un precio de **Bs. 58.00** y un stock disponible de 5 Botella.",
+    "timestamp": "2026-09-27T19:27:06.686Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 192,
+  "fields": {
+    "session": 48,
+    "sender": "Usuario",
+    "message": "lista productos de bebidas",
+    "timestamp": "2026-09-27T19:27:43.674Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 193,
+  "fields": {
+    "session": 48,
+    "sender": "Asistente",
+    "message": "**Productos en la categoría Bebidas y Licores** (5 ítems):\n\n• **Whisky Escocés Single Malt 12 Años 750ml** (BEB-005): Bs. 58.00 (Stock: 5 Botella)\n• **Cerveza Artesanal IPA Pack x6 330ml** (BEB-004): Bs. 9.80 (Stock: 14 Six-pack)\n• **Jugo de Naranja 100% Natural 1L** (BEB-003): Bs. 2.65 (Stock: 19 Envase)\n• **Refresco Coca-Cola Original 2L** (BEB-002): Bs. 2.10 (Stock: 45 Botella)\n• **Agua Mineral Sin Gas 1.5L** (BEB-001): Bs. 0.75 (Stock: 80 Botella)",
+    "timestamp": "2026-09-27T19:28:33.963Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 194,
+  "fields": {
+    "session": 48,
+    "sender": "Usuario",
+    "message": "precio del aceite",
+    "timestamp": "2026-09-27T19:28:59.752Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 195,
+  "fields": {
+    "session": 48,
+    "sender": "Asistente",
+    "message": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 32 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "timestamp": "2026-09-27T19:29:50.164Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 196,
+  "fields": {
+    "session": 49,
+    "sender": "Usuario",
+    "message": "clmia de hoy",
+    "timestamp": "2026-09-27T19:35:43.320Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 197,
+  "fields": {
+    "session": 49,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T19:36:33.645Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 198,
+  "fields": {
+    "session": 50,
+    "sender": "Usuario",
+    "message": "¿Cuál es el producto más barato?",
+    "timestamp": "2026-09-27T19:46:02.076Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 199,
+  "fields": {
+    "session": 50,
+    "sender": "Asistente",
+    "message": "El producto más barato del inventario es **Gelatina en Polvo Sabor Fresa 100g** (Código: ABA-007) de la categoría *Abarrotes y Despensa",
+    "timestamp": "2026-09-27T19:46:07.279Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 200,
+  "fields": {
+    "session": 51,
+    "sender": "Usuario",
+    "message": "¿Cuál es el producto más caro?",
+    "timestamp": "2026-09-27T19:46:19.761Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 201,
+  "fields": {
+    "session": 51,
+    "sender": "Asistente",
+    "message": "El producto más caro del inventario es **Whisky Escocés Single Malt 12 Años 750ml** (Código: BEB-005) de la categoría *Bebidas y Lico",
+    "timestamp": "2026-09-27T19:46:24.067Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 202,
+  "fields": {
+    "session": 52,
+    "sender": "Usuario",
+    "message": "¿Qué precio tiene la Leche Pil?",
+    "timestamp": "2026-09-27T19:47:38.073Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 203,
+  "fields": {
+    "session": 52,
+    "sender": "Asistente",
+    "message": "La leche pil tiene un precio de Bs. 1.45 por litro.",
+    "timestamp": "2026-09-27T19:47:41.379Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 204,
+  "fields": {
+    "session": 53,
+    "sender": "Usuario",
+    "message": "¿Quién descubrió América?",
+    "timestamp": "2026-09-27T19:47:44.539Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 205,
+  "fields": {
+    "session": 53,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T19:47:44.591Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 206,
+  "fields": {
+    "session": 54,
+    "sender": "Usuario",
+    "message": "¿Cuánto cuesta el arroz?",
+    "timestamp": "2026-09-27T19:47:48.587Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 207,
+  "fields": {
+    "session": 54,
+    "sender": "Asistente",
+    "message": "Código: ABA-001\nNombre: Arroz Blanco Grano Largo Extra 1kg\nCategoría: Abarrotes y Despensa\nPrecio: Bs. 1.35\nStock actual:",
+    "timestamp": "2026-09-27T19:47:55.874Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 208,
+  "fields": {
+    "session": 55,
+    "sender": "Usuario",
+    "message": "¿Cuánto cuesta el arroz?",
+    "timestamp": "2026-09-27T19:48:24.098Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 209,
+  "fields": {
+    "session": 55,
+    "sender": "Asistente",
+    "message": "**Arroz Blanco Grano Largo Extra 1kg** (Código: ABA-001)\n• Categoría: Abarrotes y Despensa\n• Precio: **Bs. 1.35**\n• Stock disponible: 90 Kg\n• Estado de stock: Optimo",
+    "timestamp": "2026-09-27T19:48:34.521Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 210,
+  "fields": {
+    "session": 56,
+    "sender": "Usuario",
+    "message": "¿Cuánto cuesta el arroz?",
+    "timestamp": "2026-09-27T19:50:18.325Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 211,
+  "fields": {
+    "session": 56,
+    "sender": "Asistente",
+    "message": "**Arroz Blanco Grano Largo Extra 1kg** (Código: ABA-001)\n• Categoría: Abarrotes y Despensa\n• Precio: **Bs. 1.35**\n• Stock disponible: 90 Kg\n• Estado de stock: Optimo",
+    "timestamp": "2026-09-27T19:50:23.378Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 212,
+  "fields": {
+    "session": 57,
+    "sender": "Usuario",
+    "message": "¿Cuánto cuesta la Leche Pil?",
+    "timestamp": "2026-09-27T19:53:39.534Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 213,
+  "fields": {
+    "session": 57,
+    "sender": "Asistente",
+    "message": "**Leche Entera Larga Vida 1L** (Código: LAC-001)\n• Categoría: Lácteos y Huevos\n• Precio: **Bs. 1.45**\n• Stock disponible: 48 Litro\n• Estado de stock: Optimo",
+    "timestamp": "2026-09-27T19:53:44.602Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 214,
+  "fields": {
+    "session": 58,
+    "sender": "Usuario",
+    "message": "precio de los aceites",
+    "timestamp": "2026-09-27T19:57:39.362Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 215,
+  "fields": {
+    "session": 58,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T19:57:39.390Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 216,
+  "fields": {
+    "session": 58,
+    "sender": "Usuario",
+    "message": "lista de precio de los aceites",
+    "timestamp": "2026-09-27T19:57:53.162Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 217,
+  "fields": {
+    "session": 58,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T19:57:53.211Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 218,
+  "fields": {
+    "session": 58,
+    "sender": "Usuario",
+    "message": "lista de aceites",
+    "timestamp": "2026-09-27T19:58:06.750Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 219,
+  "fields": {
+    "session": 58,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T19:58:06.836Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 220,
+  "fields": {
+    "session": 58,
+    "sender": "Usuario",
+    "message": "precio de aceite",
+    "timestamp": "2026-09-27T19:58:20.373Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 221,
+  "fields": {
+    "session": 58,
+    "sender": "Asistente",
+    "message": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 20 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "timestamp": "2026-09-27T19:58:25.570Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 222,
+  "fields": {
+    "session": 58,
+    "sender": "Usuario",
+    "message": "capital de bolivia",
+    "timestamp": "2026-09-27T19:58:39.677Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 223,
+  "fields": {
+    "session": 58,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T19:58:40.086Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 224,
+  "fields": {
+    "session": 58,
+    "sender": "Usuario",
+    "message": "producto caro y barato",
+    "timestamp": "2026-09-27T19:58:56.351Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 225,
+  "fields": {
+    "session": 58,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T19:58:56.518Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 226,
+  "fields": {
+    "session": 58,
+    "sender": "Usuario",
+    "message": "producto caro",
+    "timestamp": "2026-09-27T19:59:02.512Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 227,
+  "fields": {
+    "session": 58,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T19:59:02.741Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 228,
+  "fields": {
+    "session": 58,
+    "sender": "Usuario",
+    "message": "producto caro",
+    "timestamp": "2026-09-27T19:59:09.548Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 229,
+  "fields": {
+    "session": 58,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T19:59:09.645Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 230,
+  "fields": {
+    "session": 58,
+    "sender": "Usuario",
+    "message": "lista de arroces",
+    "timestamp": "2026-09-27T19:59:30.880Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 231,
+  "fields": {
+    "session": 58,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T19:59:31.034Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 232,
+  "fields": {
+    "session": 58,
+    "sender": "Usuario",
+    "message": "crear un nuevo producto",
+    "timestamp": "2026-09-27T20:02:28.757Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 233,
+  "fields": {
+    "session": 58,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T20:02:28.893Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 234,
+  "fields": {
+    "session": 58,
+    "sender": "Usuario",
+    "message": "actualizar aceite",
+    "timestamp": "2026-09-27T20:02:38.437Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 235,
+  "fields": {
+    "session": 58,
+    "sender": "Asistente",
+    "message": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 20 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "timestamp": "2026-09-27T20:02:43.629Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 236,
+  "fields": {
+    "session": 59,
+    "sender": "Usuario",
+    "message": "lista de aceites",
+    "timestamp": "2026-09-27T20:07:27.720Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 237,
+  "fields": {
+    "session": 59,
+    "sender": "Asistente",
+    "message": "3.10, 9.50, 1.85",
+    "timestamp": "2026-09-27T20:07:29.353Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 238,
+  "fields": {
+    "session": 60,
+    "sender": "Usuario",
+    "message": "lista de aceites",
+    "timestamp": "2026-09-27T20:07:54.366Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 239,
+  "fields": {
+    "session": 60,
+    "sender": "Asistente",
+    "message": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 20 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "timestamp": "2026-09-27T20:07:54.495Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 240,
+  "fields": {
+    "session": 61,
+    "sender": "Usuario",
+    "message": "¿Qué precio tiene el aceite de girasol?",
+    "timestamp": "2026-09-27T20:07:59.696Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 241,
+  "fields": {
+    "session": 61,
+    "sender": "Asistente",
+    "message": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 20 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "timestamp": "2026-09-27T20:07:59.790Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 242,
+  "fields": {
+    "session": 62,
+    "sender": "Usuario",
+    "message": "lista de aceites",
+    "timestamp": "2026-09-27T20:08:21.581Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 243,
+  "fields": {
+    "session": 62,
+    "sender": "Asistente",
+    "message": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 20 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "timestamp": "2026-09-27T20:08:21.652Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 244,
+  "fields": {
+    "session": 63,
+    "sender": "Usuario",
+    "message": "precio del aceite de girasol",
+    "timestamp": "2026-09-27T20:08:25.967Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 245,
+  "fields": {
+    "session": 63,
+    "sender": "Asistente",
+    "message": "**Aceite de Girasol Puro 900ml** (Código: ABA-002)\n• Categoría: Abarrotes y Despensa\n• Precio: **Bs. 3.10**\n• Stock disponible: 20 Botella\n• Stock mínimo de alerta: 15 Botella\n• Estado: Optimo",
+    "timestamp": "2026-09-27T20:08:31.034Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 246,
+  "fields": {
+    "session": 64,
+    "sender": "Usuario",
+    "message": "lista de carnes",
+    "timestamp": "2026-09-27T20:24:57.080Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 247,
+  "fields": {
+    "session": 64,
+    "sender": "Asistente",
+    "message": "**Productos en la categoría Carnes y Aves** (6 ítems):\n\n• **Jamón Serrano Gran Reserva Selección 1kg** (CAR-005): Bs. 42.00 (Stock: 2 Kg)\n• **Corte Lomo Fino de Res Premium 1kg** (CAR-002): Bs. 18.50 (Stock: 8 Kg)\n• **Costilla de Cerdo Parrillera 1kg** (CAR-006): Bs. 8.90 (Stock: 14 Kg)\n• **Chuleta de Cerdo Ahumada 1kg** (CAR-004): Bs. 7.40 (Stock: 11 Kg)\n• **Carne Molida Especial 1kg** (CAR-003): Bs. 6.80 (Stock: 15 Kg)\n• **Pechuga de Pollo Fresca 1kg** (CAR-001): Bs. 5.20 (Stock: 22 Kg)",
+    "timestamp": "2026-09-27T20:24:57.170Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 248,
+  "fields": {
+    "session": 64,
+    "sender": "Usuario",
+    "message": "lista de producttttttts ocaros",
+    "timestamp": "2026-09-27T20:25:21.337Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 249,
+  "fields": {
+    "session": 64,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T20:25:21.520Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 250,
+  "fields": {
+    "session": 64,
+    "sender": "Usuario",
+    "message": "lista de productos caros",
+    "timestamp": "2026-09-27T20:25:34.709Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 251,
+  "fields": {
+    "session": 64,
+    "sender": "Asistente",
+    "message": "El supermercado cuenta con **50 productos** distribuidos en 7 categorías:\n\n• Abarrotes y Despensa\n• Bebidas y Licores\n• Carnes y Aves\n• Frutas y Verduras\n• Limpieza y Hogar\n• Lácteos y Huevos\n• Panadería y Pastelería\n\nPuedes consultar por el producto más caro, más barato, stock crítico o por una categoría específica.",
+    "timestamp": "2026-09-27T20:25:35.028Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 252,
+  "fields": {
+    "session": 64,
+    "sender": "Usuario",
+    "message": "stock critico",
+    "timestamp": "2026-09-27T20:25:54.138Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 253,
+  "fields": {
+    "session": 64,
+    "sender": "Asistente",
+    "message": "Se registraron **6 productos en alerta de stock o pocas existencias**:\n\n• **Jabón Líquido para Manos Humectante 500ml** [Limpieza y Hogar] - AGOTADO (0 unidades) - Bs. 2.15\n• **Torta de Vainilla Artesanal 1kg** [Panadería y Pastelería] - Stock: 1 Unidad (Mínimo: 3) - Bs. 14.00\n• **Jamón Serrano Gran Reserva Selección 1kg** [Carnes y Aves] - Stock: 2 Kg (Mínimo: 4) - Bs. 42.00\n• **Aceite de Oliva Extra Virgen 500ml** [Abarrotes y Despensa] - Stock: 2 Botella (Mínimo: 6) - Bs. 9.50\n• **Queso Parmesano Reggiano Importado 200g** [Lácteos y Huevos] - Stock: 3 Unidad (Mínimo: 5) - Bs. 8.90\n• **Aguacate Hass Premium 1kg** [Frutas y Verduras] - Stock: 4 Kg (Mínimo: 8) - Bs. 4.50\n\nSe sugiere programar la reposición prioritaria para garantizar el abastecimiento.",
+    "timestamp": "2026-09-27T20:25:54.220Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 254,
+  "fields": {
+    "session": 65,
+    "sender": "Usuario",
+    "message": "lista de panes",
+    "timestamp": "2026-09-27T20:34:33.934Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 255,
+  "fields": {
+    "session": 65,
+    "sender": "Asistente",
+    "message": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Pan Francés Fresco (Bolsa x6)** (PAN-002): Bs. 1.20 (Stock: 35 Bolsa)\n• **Pan Marraqueta Tradicional (Bolsa x10)** (PAN-005): Bs. 0.80 (Stock: 50 Bolsa)\n• **Pan de Molde Integral 500g** (PAN-001): Bs. 2.30 (Stock: 28 Bolsa)",
+    "timestamp": "2026-09-27T20:34:34.065Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 256,
+  "fields": {
+    "session": 65,
+    "sender": "Usuario",
+    "message": "produtco caro",
+    "timestamp": "2026-09-27T20:36:33.497Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 257,
+  "fields": {
+    "session": 65,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T20:36:33.710Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 258,
+  "fields": {
+    "session": 65,
+    "sender": "Usuario",
+    "message": "producto caro",
+    "timestamp": "2026-09-27T20:36:49.197Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 259,
+  "fields": {
+    "session": 65,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T20:36:49.445Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 260,
+  "fields": {
+    "session": 65,
+    "sender": "Usuario",
+    "message": "producto mas caro",
+    "timestamp": "2026-09-27T20:37:12.554Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 261,
+  "fields": {
+    "session": 65,
+    "sender": "Asistente",
+    "message": "El producto más caro del inventario es **Whisky Escocés Single Malt 12 Años 750ml** (Código: BEB-005) de la categoría *Bebidas y Licores*, con un precio de **Bs. 58.00** y un stock disponible de 5 Botella.",
+    "timestamp": "2026-09-27T20:37:17.806Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 262,
+  "fields": {
+    "session": 65,
+    "sender": "Usuario",
+    "message": "lista de leches",
+    "timestamp": "2026-09-27T20:37:29.899Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 263,
+  "fields": {
+    "session": 65,
+    "sender": "Asistente",
+    "message": "Se encontraron **2 productos relacionados** en el inventario:\n\n• **Crema de Leche 200ml** (LAC-007): Bs. 2.10 (Stock: 22 Unidad)\n• **Leche Entera Larga Vida 1L** (LAC-001): Bs. 1.45 (Stock: 48 Litro)",
+    "timestamp": "2026-09-27T20:37:30.030Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 264,
+  "fields": {
+    "session": 66,
+    "sender": "Usuario",
+    "message": "¿Cuánto cuesta el queso gouda?",
+    "timestamp": "2026-09-27T20:43:30.330Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 265,
+  "fields": {
+    "session": 66,
+    "sender": "Asistente",
+    "message": "**Queso Gouda Rebanado 250g** (Código: LAC-002)\n• Categoría: Lácteos y Huevos\n• Precio: **Bs. 3.80**\n• Stock disponible: 12 Paquete\n• Stock mínimo de alerta: 10 Paquete\n• Estado: Optimo",
+    "timestamp": "2026-09-27T20:43:36.063Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 266,
+  "fields": {
+    "session": 67,
+    "sender": "Usuario",
+    "message": "¿Cuánto cuesta el queso gouda?",
+    "timestamp": "2026-09-27T20:49:27.264Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 267,
+  "fields": {
+    "session": 67,
+    "sender": "Asistente",
+    "message": "**Queso Gouda Rebanado 250g** (Código: LAC-002)\n• Categoría: Lácteos y Huevos\n• Precio: **Bs. 3.80**\n• Stock disponible: 12 Paquete\n• Stock mínimo de alerta: 10 Paquete\n• Estado: Optimo",
+    "timestamp": "2026-09-27T20:49:39.742Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 268,
+  "fields": {
+    "session": 68,
+    "sender": "Usuario",
+    "message": "pais mas poblado",
+    "timestamp": "2026-09-27T21:25:56.938Z"
+  }
+},
+{
+  "model": "ai_chat.message",
+  "pk": 269,
+  "fields": {
+    "session": 68,
+    "sender": "Asistente",
+    "message": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "timestamp": "2026-09-27T21:25:56.999Z"
+  }
+},
+{
+  "model": "ai_chat.categoria",
+  "pk": 1,
+  "fields": {
+    "nombre": "Lácteos y Huevos",
+    "descripcion": "Leches, quesos, yogures, mantequillas y huevos frescos."
+  }
+},
+{
+  "model": "ai_chat.categoria",
+  "pk": 2,
+  "fields": {
+    "nombre": "Carnes y Aves",
+    "descripcion": "Cortes de res, pollo fresco, cerdo y embutidos seleccionados."
+  }
+},
+{
+  "model": "ai_chat.categoria",
+  "pk": 3,
+  "fields": {
+    "nombre": "Frutas y Verduras",
+    "descripcion": "Productos frescos de la huerta, frutas de temporada y verduras."
+  }
+},
+{
+  "model": "ai_chat.categoria",
+  "pk": 4,
+  "fields": {
+    "nombre": "Bebidas y Licores",
+    "descripcion": "Aguas, jugos naturales, gaseosas, vinos y licores premium."
+  }
+},
+{
+  "model": "ai_chat.categoria",
+  "pk": 5,
+  "fields": {
+    "nombre": "Abarrotes y Despensa",
+    "descripcion": "Arroz, pastas, aceites, granos, conservas y salsas."
+  }
+},
+{
+  "model": "ai_chat.categoria",
+  "pk": 6,
+  "fields": {
+    "nombre": "Panadería y Pastelería",
+    "descripcion": "Panes recién horneados, tostadas, galletas y postres."
+  }
+},
+{
+  "model": "ai_chat.categoria",
+  "pk": 7,
+  "fields": {
+    "nombre": "Limpieza y Hogar",
+    "descripcion": "Detergentes, desinfectantes, papel higiénico y artículos de aseo."
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 1,
+  "fields": {
+    "codigo": "LAC-001",
+    "nombre": "Leche Entera Larga Vida 1L",
+    "descripcion": "",
+    "categoria": 1,
+    "precio": "1.45",
+    "stock": 48,
+    "stock_minimo": 15,
+    "unidad_medida": "Litro",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.362Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 2,
+  "fields": {
+    "codigo": "LAC-002",
+    "nombre": "Queso Gouda Rebanado 250g",
+    "descripcion": "",
+    "categoria": 1,
+    "precio": "3.80",
+    "stock": 12,
+    "stock_minimo": 10,
+    "unidad_medida": "Paquete",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.375Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 3,
+  "fields": {
+    "codigo": "LAC-003",
+    "nombre": "Yogur Griego Natural 500g",
+    "descripcion": "",
+    "categoria": 1,
+    "precio": "2.90",
+    "stock": 18,
+    "stock_minimo": 8,
+    "unidad_medida": "Unidad",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.385Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 4,
+  "fields": {
+    "codigo": "LAC-004",
+    "nombre": "Mantequilla con Sal 200g",
+    "descripcion": "",
+    "categoria": 1,
+    "precio": "2.40",
+    "stock": 25,
+    "stock_minimo": 10,
+    "unidad_medida": "Unidad",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.397Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 5,
+  "fields": {
+    "codigo": "LAC-005",
+    "nombre": "Huevos Frescos Extra Grandes (Docena)",
+    "descripcion": "",
+    "categoria": 1,
+    "precio": "2.85",
+    "stock": 34,
+    "stock_minimo": 12,
+    "unidad_medida": "Docena",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.409Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 6,
+  "fields": {
+    "codigo": "LAC-006",
+    "nombre": "Queso Parmesano Reggiano Importado 200g",
+    "descripcion": "",
+    "categoria": 1,
+    "precio": "8.90",
+    "stock": 3,
+    "stock_minimo": 5,
+    "unidad_medida": "Unidad",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.422Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 7,
+  "fields": {
+    "codigo": "CAR-001",
+    "nombre": "Pechuga de Pollo Fresca 1kg",
+    "descripcion": "",
+    "categoria": 2,
+    "precio": "5.20",
+    "stock": 22,
+    "stock_minimo": 10,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.434Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 8,
+  "fields": {
+    "codigo": "CAR-002",
+    "nombre": "Corte Lomo Fino de Res Premium 1kg",
+    "descripcion": "",
+    "categoria": 2,
+    "precio": "18.50",
+    "stock": 8,
+    "stock_minimo": 5,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.444Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 9,
+  "fields": {
+    "codigo": "CAR-003",
+    "nombre": "Carne Molida Especial 1kg",
+    "descripcion": "",
+    "categoria": 2,
+    "precio": "6.80",
+    "stock": 15,
+    "stock_minimo": 8,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.457Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 10,
+  "fields": {
+    "codigo": "CAR-004",
+    "nombre": "Chuleta de Cerdo Ahumada 1kg",
+    "descripcion": "",
+    "categoria": 2,
+    "precio": "7.40",
+    "stock": 11,
+    "stock_minimo": 6,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.470Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 11,
+  "fields": {
+    "codigo": "CAR-005",
+    "nombre": "Jamón Serrano Gran Reserva Selección 1kg",
+    "descripcion": "",
+    "categoria": 2,
+    "precio": "42.00",
+    "stock": 2,
+    "stock_minimo": 4,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.482Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 12,
+  "fields": {
+    "codigo": "FRU-001",
+    "nombre": "Plátano / Banana Cavendish 1kg",
+    "descripcion": "",
+    "categoria": 3,
+    "precio": "1.10",
+    "stock": 60,
+    "stock_minimo": 20,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.495Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 13,
+  "fields": {
+    "codigo": "FRU-002",
+    "nombre": "Manzana Roja Royal Gala 1kg",
+    "descripcion": "",
+    "categoria": 3,
+    "precio": "2.20",
+    "stock": 30,
+    "stock_minimo": 15,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.505Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 14,
+  "fields": {
+    "codigo": "FRU-003",
+    "nombre": "Tomate Chonto Fresco 1kg",
+    "descripcion": "",
+    "categoria": 3,
+    "precio": "1.60",
+    "stock": 40,
+    "stock_minimo": 15,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.515Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 15,
+  "fields": {
+    "codigo": "FRU-004",
+    "nombre": "Aguacate Hass Premium 1kg",
+    "descripcion": "",
+    "categoria": 3,
+    "precio": "4.50",
+    "stock": 4,
+    "stock_minimo": 8,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.527Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 16,
+  "fields": {
+    "codigo": "FRU-005",
+    "nombre": "Cebolla Blanca Cabezona 1kg",
+    "descripcion": "",
+    "categoria": 3,
+    "precio": "0.95",
+    "stock": 50,
+    "stock_minimo": 20,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.538Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 17,
+  "fields": {
+    "codigo": "FRU-006",
+    "nombre": "Papa Pastusa Seleccionada 1kg",
+    "descripcion": "",
+    "categoria": 3,
+    "precio": "0.85",
+    "stock": 75,
+    "stock_minimo": 25,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.549Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 18,
+  "fields": {
+    "codigo": "BEB-001",
+    "nombre": "Agua Mineral Sin Gas 1.5L",
+    "descripcion": "",
+    "categoria": 4,
+    "precio": "0.75",
+    "stock": 80,
+    "stock_minimo": 25,
+    "unidad_medida": "Botella",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.562Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 19,
+  "fields": {
+    "codigo": "BEB-002",
+    "nombre": "Refresco Coca-Cola Original 2L",
+    "descripcion": "",
+    "categoria": 4,
+    "precio": "2.10",
+    "stock": 45,
+    "stock_minimo": 20,
+    "unidad_medida": "Botella",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.572Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 20,
+  "fields": {
+    "codigo": "BEB-003",
+    "nombre": "Jugo de Naranja 100% Natural 1L",
+    "descripcion": "",
+    "categoria": 4,
+    "precio": "2.65",
+    "stock": 19,
+    "stock_minimo": 10,
+    "unidad_medida": "Envase",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.584Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 21,
+  "fields": {
+    "codigo": "BEB-004",
+    "nombre": "Cerveza Artesanal IPA Pack x6 330ml",
+    "descripcion": "",
+    "categoria": 4,
+    "precio": "9.80",
+    "stock": 14,
+    "stock_minimo": 8,
+    "unidad_medida": "Six-pack",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.598Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 22,
+  "fields": {
+    "codigo": "BEB-005",
+    "nombre": "Whisky Escocés Single Malt 12 Años 750ml",
+    "descripcion": "",
+    "categoria": 4,
+    "precio": "58.00",
+    "stock": 5,
+    "stock_minimo": 3,
+    "unidad_medida": "Botella",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.610Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 23,
+  "fields": {
+    "codigo": "ABA-001",
+    "nombre": "Arroz Blanco Grano Largo Extra 1kg",
+    "descripcion": "",
+    "categoria": 5,
+    "precio": "1.35",
+    "stock": 90,
+    "stock_minimo": 30,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.622Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 24,
+  "fields": {
+    "codigo": "ABA-002",
+    "nombre": "Aceite de Girasol Puro 900ml",
+    "descripcion": "",
+    "categoria": 5,
+    "precio": "3.10",
+    "stock": 20,
+    "stock_minimo": 15,
+    "unidad_medida": "Botella",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-27T20:22:19.885Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 25,
+  "fields": {
+    "codigo": "ABA-003",
+    "nombre": "Aceite de Oliva Extra Virgen 500ml",
+    "descripcion": "",
+    "categoria": 5,
+    "precio": "9.50",
+    "stock": 2,
+    "stock_minimo": 6,
+    "unidad_medida": "Botella",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.647Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 26,
+  "fields": {
+    "codigo": "ABA-004",
+    "nombre": "Pasta Spaghetti Tradicional 500g",
+    "descripcion": "",
+    "categoria": 5,
+    "precio": "1.15",
+    "stock": 65,
+    "stock_minimo": 20,
+    "unidad_medida": "Paquete",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.661Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 27,
+  "fields": {
+    "codigo": "ABA-005",
+    "nombre": "Café Tostado y Molido Colombiano 500g",
+    "descripcion": "",
+    "categoria": 5,
+    "precio": "5.90",
+    "stock": 24,
+    "stock_minimo": 10,
+    "unidad_medida": "Bolsa",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.675Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 28,
+  "fields": {
+    "codigo": "ABA-006",
+    "nombre": "Atún en Aceite de Oliva Lata 140g",
+    "descripcion": "",
+    "categoria": 5,
+    "precio": "1.85",
+    "stock": 42,
+    "stock_minimo": 15,
+    "unidad_medida": "Lata",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.684Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 29,
+  "fields": {
+    "codigo": "ABA-007",
+    "nombre": "Gelatina en Polvo Sabor Fresa 100g",
+    "descripcion": "",
+    "categoria": 5,
+    "precio": "0.45",
+    "stock": 55,
+    "stock_minimo": 15,
+    "unidad_medida": "Sobre",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.699Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 30,
+  "fields": {
+    "codigo": "PAN-001",
+    "nombre": "Pan de Molde Integral 500g",
+    "descripcion": "",
+    "categoria": 6,
+    "precio": "2.30",
+    "stock": 28,
+    "stock_minimo": 10,
+    "unidad_medida": "Bolsa",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.709Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 31,
+  "fields": {
+    "codigo": "PAN-002",
+    "nombre": "Pan Francés Fresco (Bolsa x6)",
+    "descripcion": "",
+    "categoria": 6,
+    "precio": "1.20",
+    "stock": 35,
+    "stock_minimo": 12,
+    "unidad_medida": "Bolsa",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.724Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 32,
+  "fields": {
+    "codigo": "PAN-003",
+    "nombre": "Galletas de Chocolate Rellenas 300g",
+    "descripcion": "",
+    "categoria": 6,
+    "precio": "1.95",
+    "stock": 30,
+    "stock_minimo": 10,
+    "unidad_medida": "Paquete",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.733Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 33,
+  "fields": {
+    "codigo": "PAN-004",
+    "nombre": "Torta de Vainilla Artesanal 1kg",
+    "descripcion": "",
+    "categoria": 6,
+    "precio": "14.00",
+    "stock": 1,
+    "stock_minimo": 3,
+    "unidad_medida": "Unidad",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.746Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 34,
+  "fields": {
+    "codigo": "LIM-001",
+    "nombre": "Detergente Líquido para Ropa Concentrado 3L",
+    "descripcion": "",
+    "categoria": 7,
+    "precio": "11.50",
+    "stock": 20,
+    "stock_minimo": 8,
+    "unidad_medida": "Bidón",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.758Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 35,
+  "fields": {
+    "codigo": "LIM-002",
+    "nombre": "Lavavajillas Líquido Antibacterial 750ml",
+    "descripcion": "",
+    "categoria": 7,
+    "precio": "2.45",
+    "stock": 26,
+    "stock_minimo": 10,
+    "unidad_medida": "Botella",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.769Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 36,
+  "fields": {
+    "codigo": "LIM-003",
+    "nombre": "Papel Higiénico Doble Hoja Pack x12",
+    "descripcion": "",
+    "categoria": 7,
+    "precio": "6.20",
+    "stock": 18,
+    "stock_minimo": 10,
+    "unidad_medida": "Pack",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.791Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 37,
+  "fields": {
+    "codigo": "LIM-004",
+    "nombre": "Desinfectante Multiusos Lavanda 1L",
+    "descripcion": "",
+    "categoria": 7,
+    "precio": "1.90",
+    "stock": 33,
+    "stock_minimo": 12,
+    "unidad_medida": "Botella",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.810Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 38,
+  "fields": {
+    "codigo": "LIM-005",
+    "nombre": "Jabón Líquido para Manos Humectante 500ml",
+    "descripcion": "",
+    "categoria": 7,
+    "precio": "2.15",
+    "stock": 0,
+    "stock_minimo": 8,
+    "unidad_medida": "Frasco",
+    "estado": true,
+    "fecha_registro": "2026-09-27T18:55:39.498Z",
+    "fecha_actualizacion": "2026-09-22T13:02:48.829Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 39,
+  "fields": {
+    "codigo": "ABA-008",
+    "nombre": "Harina de Trigo Especial 1kg",
+    "descripcion": "Harina refinada para repostería y panadería",
+    "categoria": 5,
+    "precio": "1.25",
+    "stock": 50,
+    "stock_minimo": 10,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T20:06:55.220Z",
+    "fecha_actualizacion": "2026-09-27T20:06:55.224Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 40,
+  "fields": {
+    "codigo": "ABA-009",
+    "nombre": "Azúcar Blanca Refinada 1kg",
+    "descripcion": "Azúcar de caña cristalina de alta pureza",
+    "categoria": 5,
+    "precio": "1.10",
+    "stock": 70,
+    "stock_minimo": 15,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T20:06:55.256Z",
+    "fecha_actualizacion": "2026-09-27T20:06:55.258Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 41,
+  "fields": {
+    "codigo": "ABA-010",
+    "nombre": "Sal Yodada de Mesa 1kg",
+    "descripcion": "Sal fina de mesa con flúor y yodo",
+    "categoria": 5,
+    "precio": "0.40",
+    "stock": 85,
+    "stock_minimo": 20,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T20:06:55.268Z",
+    "fecha_actualizacion": "2026-09-27T20:06:55.271Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 42,
+  "fields": {
+    "codigo": "BEB-006",
+    "nombre": "Vino Tinto Cabernet Sauvignon 750ml",
+    "descripcion": "Vino tinto varietal de mesa",
+    "categoria": 4,
+    "precio": "28.50",
+    "stock": 15,
+    "stock_minimo": 5,
+    "unidad_medida": "Botella",
+    "estado": true,
+    "fecha_registro": "2026-09-27T20:06:55.285Z",
+    "fecha_actualizacion": "2026-09-27T20:06:55.288Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 43,
+  "fields": {
+    "codigo": "BEB-007",
+    "nombre": "Té Negro en Saquitos Pack x50",
+    "descripcion": "Té negro clásico en bolsitas individuales",
+    "categoria": 4,
+    "precio": "1.80",
+    "stock": 30,
+    "stock_minimo": 8,
+    "unidad_medida": "Caja",
+    "estado": true,
+    "fecha_registro": "2026-09-27T20:06:55.299Z",
+    "fecha_actualizacion": "2026-09-27T20:06:55.302Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 44,
+  "fields": {
+    "codigo": "CAR-006",
+    "nombre": "Costilla de Cerdo Parrillera 1kg",
+    "descripcion": "Corte de costilla fresca seleccionada",
+    "categoria": 2,
+    "precio": "8.90",
+    "stock": 14,
+    "stock_minimo": 4,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T20:06:55.331Z",
+    "fecha_actualizacion": "2026-09-27T20:06:55.336Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 45,
+  "fields": {
+    "codigo": "FRU-007",
+    "nombre": "Zanahoria Fresca de Campo 1kg",
+    "descripcion": "Zanahorias seleccionadas de producción local",
+    "categoria": 3,
+    "precio": "0.90",
+    "stock": 40,
+    "stock_minimo": 10,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T20:06:55.347Z",
+    "fecha_actualizacion": "2026-09-27T20:06:55.350Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 46,
+  "fields": {
+    "codigo": "FRU-008",
+    "nombre": "Naranja Dulce para Jugo 1kg",
+    "descripcion": "Naranjas jugosas frescas de estación",
+    "categoria": 3,
+    "precio": "1.30",
+    "stock": 60,
+    "stock_minimo": 15,
+    "unidad_medida": "Kg",
+    "estado": true,
+    "fecha_registro": "2026-09-27T20:06:55.360Z",
+    "fecha_actualizacion": "2026-09-27T20:06:55.363Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 47,
+  "fields": {
+    "codigo": "LAC-007",
+    "nombre": "Crema de Leche 200ml",
+    "descripcion": "Crema pasteurizada con 35% de materia grasa",
+    "categoria": 1,
+    "precio": "2.10",
+    "stock": 22,
+    "stock_minimo": 5,
+    "unidad_medida": "Unidad",
+    "estado": true,
+    "fecha_registro": "2026-09-27T20:06:55.373Z",
+    "fecha_actualizacion": "2026-09-27T20:06:55.376Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 48,
+  "fields": {
+    "codigo": "LIM-006",
+    "nombre": "Limpiador de Pisos Floral 900ml",
+    "descripcion": "Limpiador desinfectante con fragancia floral",
+    "categoria": 7,
+    "precio": "1.75",
+    "stock": 25,
+    "stock_minimo": 6,
+    "unidad_medida": "Litro",
+    "estado": true,
+    "fecha_registro": "2026-09-27T20:06:55.392Z",
+    "fecha_actualizacion": "2026-09-27T20:06:55.399Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 49,
+  "fields": {
+    "codigo": "LIM-007",
+    "nombre": "Esponja Multiusos Salvaúñas Pack x3",
+    "descripcion": "Esponja de doble cara para vajilla y cocina",
+    "categoria": 7,
+    "precio": "0.95",
+    "stock": 40,
+    "stock_minimo": 10,
+    "unidad_medida": "Paquete",
+    "estado": true,
+    "fecha_registro": "2026-09-27T20:06:55.415Z",
+    "fecha_actualizacion": "2026-09-27T20:06:55.418Z"
+  }
+},
+{
+  "model": "ai_chat.producto",
+  "pk": 50,
+  "fields": {
+    "codigo": "PAN-005",
+    "nombre": "Pan Marraqueta Tradicional (Bolsa x10)",
+    "descripcion": "Marraquetas crujientes recién horneadas",
+    "categoria": 6,
+    "precio": "0.80",
+    "stock": 50,
+    "stock_minimo": 10,
+    "unidad_medida": "Bolsa",
+    "estado": true,
+    "fecha_registro": "2026-09-27T20:06:55.470Z",
+    "fecha_actualizacion": "2026-09-27T20:06:55.476Z"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 1,
+  "fields": {
+    "pregunta": "¿Cuál es el producto más barato?",
+    "respuesta": "El producto más barato del inventario es **Gelatina en Polvo Sabor Fresa 100g** (Código: ABA-007) de la categoría *Abarrotes y Despensa*, con un precio de **Bs. 0.45** y un stock disponible de 55 Sobre.",
+    "fecha": "2026-09-27T19:14:37.870Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 2,
+  "fields": {
+    "pregunta": "lista de los productos del mas caro al mas bajo",
+    "respuesta": "El producto más caro del inventario es **Whisky Escocés Single Malt 12 Años 750ml** (Código: BEB-005) de la categoría *Bebidas y Licores*, con un precio de **Bs. 58.00** y un stock disponible de 5 Botella.",
+    "fecha": "2026-09-27T19:27:06.575Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 3,
+  "fields": {
+    "pregunta": "lista productos de bebidas",
+    "respuesta": "**Productos en la categoría Bebidas y Licores** (5 ítems):\n\n• **Whisky Escocés Single Malt 12 Años 750ml** (BEB-005): Bs. 58.00 (Stock: 5 Botella)\n• **Cerveza Artesanal IPA Pack x6 330ml** (BEB-004): Bs. 9.80 (Stock: 14 Six-pack)\n• **Jugo de Naranja 100% Natural 1L** (BEB-003): Bs. 2.65 (Stock: 19 Envase)\n• **Refresco Coca-Cola Original 2L** (BEB-002): Bs. 2.10 (Stock: 45 Botella)\n• **Agua Mineral Sin Gas 1.5L** (BEB-001): Bs. 0.75 (Stock: 80 Botella)",
+    "fecha": "2026-09-27T19:28:33.900Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 4,
+  "fields": {
+    "pregunta": "precio del aceite",
+    "respuesta": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 32 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "fecha": "2026-09-27T19:29:50.070Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 5,
+  "fields": {
+    "pregunta": "clmia de hoy",
+    "respuesta": "Soy InvenBot, solo puedo ayudarte con consultas del inventario del supermercado.",
+    "fecha": "2026-09-27T19:36:33.584Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 6,
+  "fields": {
+    "pregunta": "¿Cuál es el producto más barato?",
+    "respuesta": "El producto más barato del inventario es **Gelatina en Polvo Sabor Fresa 100g** (Código: ABA-007) de la categoría *Abarrotes y Despensa",
+    "fecha": "2026-09-27T19:46:07.199Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 7,
+  "fields": {
+    "pregunta": "¿Cuál es el producto más caro?",
+    "respuesta": "El producto más caro del inventario es **Whisky Escocés Single Malt 12 Años 750ml** (Código: BEB-005) de la categoría *Bebidas y Lico",
+    "fecha": "2026-09-27T19:46:24.020Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 8,
+  "fields": {
+    "pregunta": "¿Qué precio tiene la Leche Pil?",
+    "respuesta": "La leche pil tiene un precio de Bs. 1.45 por litro.",
+    "fecha": "2026-09-27T19:47:41.348Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 9,
+  "fields": {
+    "pregunta": "¿Cuánto cuesta el arroz?",
+    "respuesta": "Código: ABA-001\nNombre: Arroz Blanco Grano Largo Extra 1kg\nCategoría: Abarrotes y Despensa\nPrecio: Bs. 1.35\nStock actual:",
+    "fecha": "2026-09-27T19:47:55.792Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 10,
+  "fields": {
+    "pregunta": "¿Cuánto cuesta el arroz?",
+    "respuesta": "**Arroz Blanco Grano Largo Extra 1kg** (Código: ABA-001)\n• Categoría: Abarrotes y Despensa\n• Precio: **Bs. 1.35**\n• Stock disponible: 90 Kg\n• Estado de stock: Optimo",
+    "fecha": "2026-09-27T19:48:34.209Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 11,
+  "fields": {
+    "pregunta": "¿Cuánto cuesta el arroz?",
+    "respuesta": "**Arroz Blanco Grano Largo Extra 1kg** (Código: ABA-001)\n• Categoría: Abarrotes y Despensa\n• Precio: **Bs. 1.35**\n• Stock disponible: 90 Kg\n• Estado de stock: Optimo",
+    "fecha": "2026-09-27T19:50:23.349Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 12,
+  "fields": {
+    "pregunta": "¿Cuánto cuesta la Leche Pil?",
+    "respuesta": "**Leche Entera Larga Vida 1L** (Código: LAC-001)\n• Categoría: Lácteos y Huevos\n• Precio: **Bs. 1.45**\n• Stock disponible: 48 Litro\n• Estado de stock: Optimo",
+    "fecha": "2026-09-27T19:53:44.577Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 13,
+  "fields": {
+    "pregunta": "precio de aceite",
+    "respuesta": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 20 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "fecha": "2026-09-27T19:58:25.445Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 14,
+  "fields": {
+    "pregunta": "actualizar aceite",
+    "respuesta": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 20 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "fecha": "2026-09-27T20:02:43.525Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 15,
+  "fields": {
+    "pregunta": "lista de aceites",
+    "respuesta": "3.10, 9.50, 1.85",
+    "fecha": "2026-09-27T20:07:29.312Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 16,
+  "fields": {
+    "pregunta": "lista de aceites",
+    "respuesta": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 20 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "fecha": "2026-09-27T20:07:54.471Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 17,
+  "fields": {
+    "pregunta": "¿Qué precio tiene el aceite de girasol?",
+    "respuesta": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 20 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "fecha": "2026-09-27T20:07:59.762Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 18,
+  "fields": {
+    "pregunta": "lista de aceites",
+    "respuesta": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Aceite de Girasol Puro 900ml** (ABA-002): Bs. 3.10 (Stock: 20 Botella)\n• **Aceite de Oliva Extra Virgen 500ml** (ABA-003): Bs. 9.50 (Stock: 2 Botella)\n• **Atún en Aceite de Oliva Lata 140g** (ABA-006): Bs. 1.85 (Stock: 42 Lata)",
+    "fecha": "2026-09-27T20:08:21.618Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 19,
+  "fields": {
+    "pregunta": "precio del aceite de girasol",
+    "respuesta": "**Aceite de Girasol Puro 900ml** (Código: ABA-002)\n• Categoría: Abarrotes y Despensa\n• Precio: **Bs. 3.10**\n• Stock disponible: 20 Botella\n• Stock mínimo de alerta: 15 Botella\n• Estado: Optimo",
+    "fecha": "2026-09-27T20:08:31.013Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 20,
+  "fields": {
+    "pregunta": "lista de carnes",
+    "respuesta": "**Productos en la categoría Carnes y Aves** (6 ítems):\n\n• **Jamón Serrano Gran Reserva Selección 1kg** (CAR-005): Bs. 42.00 (Stock: 2 Kg)\n• **Corte Lomo Fino de Res Premium 1kg** (CAR-002): Bs. 18.50 (Stock: 8 Kg)\n• **Costilla de Cerdo Parrillera 1kg** (CAR-006): Bs. 8.90 (Stock: 14 Kg)\n• **Chuleta de Cerdo Ahumada 1kg** (CAR-004): Bs. 7.40 (Stock: 11 Kg)\n• **Carne Molida Especial 1kg** (CAR-003): Bs. 6.80 (Stock: 15 Kg)\n• **Pechuga de Pollo Fresca 1kg** (CAR-001): Bs. 5.20 (Stock: 22 Kg)",
+    "fecha": "2026-09-27T20:24:57.115Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 21,
+  "fields": {
+    "pregunta": "lista de productos caros",
+    "respuesta": "El supermercado cuenta con **50 productos** distribuidos en 7 categorías:\n\n• Abarrotes y Despensa\n• Bebidas y Licores\n• Carnes y Aves\n• Frutas y Verduras\n• Limpieza y Hogar\n• Lácteos y Huevos\n• Panadería y Pastelería\n\nPuedes consultar por el producto más caro, más barato, stock crítico o por una categoría específica.",
+    "fecha": "2026-09-27T20:25:34.989Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 22,
+  "fields": {
+    "pregunta": "stock critico",
+    "respuesta": "Se registraron **6 productos en alerta de stock o pocas existencias**:\n\n• **Jabón Líquido para Manos Humectante 500ml** [Limpieza y Hogar] - AGOTADO (0 unidades) - Bs. 2.15\n• **Torta de Vainilla Artesanal 1kg** [Panadería y Pastelería] - Stock: 1 Unidad (Mínimo: 3) - Bs. 14.00\n• **Jamón Serrano Gran Reserva Selección 1kg** [Carnes y Aves] - Stock: 2 Kg (Mínimo: 4) - Bs. 42.00\n• **Aceite de Oliva Extra Virgen 500ml** [Abarrotes y Despensa] - Stock: 2 Botella (Mínimo: 6) - Bs. 9.50\n• **Queso Parmesano Reggiano Importado 200g** [Lácteos y Huevos] - Stock: 3 Unidad (Mínimo: 5) - Bs. 8.90\n• **Aguacate Hass Premium 1kg** [Frutas y Verduras] - Stock: 4 Kg (Mínimo: 8) - Bs. 4.50\n\nSe sugiere programar la reposición prioritaria para garantizar el abastecimiento.",
+    "fecha": "2026-09-27T20:25:54.198Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 23,
+  "fields": {
+    "pregunta": "lista de panes",
+    "respuesta": "Se encontraron **3 productos relacionados** en el inventario:\n\n• **Pan Francés Fresco (Bolsa x6)** (PAN-002): Bs. 1.20 (Stock: 35 Bolsa)\n• **Pan Marraqueta Tradicional (Bolsa x10)** (PAN-005): Bs. 0.80 (Stock: 50 Bolsa)\n• **Pan de Molde Integral 500g** (PAN-001): Bs. 2.30 (Stock: 28 Bolsa)",
+    "fecha": "2026-09-27T20:34:34.034Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 24,
+  "fields": {
+    "pregunta": "producto mas caro",
+    "respuesta": "El producto más caro del inventario es **Whisky Escocés Single Malt 12 Años 750ml** (Código: BEB-005) de la categoría *Bebidas y Licores*, con un precio de **Bs. 58.00** y un stock disponible de 5 Botella.",
+    "fecha": "2026-09-27T20:37:17.743Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 25,
+  "fields": {
+    "pregunta": "lista de leches",
+    "respuesta": "Se encontraron **2 productos relacionados** en el inventario:\n\n• **Crema de Leche 200ml** (LAC-007): Bs. 2.10 (Stock: 22 Unidad)\n• **Leche Entera Larga Vida 1L** (LAC-001): Bs. 1.45 (Stock: 48 Litro)",
+    "fecha": "2026-09-27T20:37:30.001Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 26,
+  "fields": {
+    "pregunta": "¿Cuánto cuesta el queso gouda?",
+    "respuesta": "**Queso Gouda Rebanado 250g** (Código: LAC-002)\n• Categoría: Lácteos y Huevos\n• Precio: **Bs. 3.80**\n• Stock disponible: 12 Paquete\n• Stock mínimo de alerta: 10 Paquete\n• Estado: Optimo",
+    "fecha": "2026-09-27T20:43:35.866Z",
+    "usuario": "Usuario"
+  }
+},
+{
+  "model": "ai_chat.consultaia",
+  "pk": 27,
+  "fields": {
+    "pregunta": "¿Cuánto cuesta el queso gouda?",
+    "respuesta": "**Queso Gouda Rebanado 250g** (Código: LAC-002)\n• Categoría: Lácteos y Huevos\n• Precio: **Bs. 3.80**\n• Stock disponible: 12 Paquete\n• Stock mínimo de alerta: 10 Paquete\n• Estado: Optimo",
+    "fecha": "2026-09-27T20:49:39.526Z",
+    "usuario": "Usuario"
+  }
+}
+]

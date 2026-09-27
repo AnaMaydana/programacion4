@@ -1,0 +1,34 @@
+# Entornos virtuales de Python
+venv
+venv/
+env
+env/
+.venv
+.venv/
+*/venv
+*/venv/
+*/env
+*/env/
+proyecto/venv
+
+# Bytecode y Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*/__pycache__/
+*.pyc
+
+# Archivos de configuración local sensible
+.env
+proyecto/.env
+
+# Archivos de sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

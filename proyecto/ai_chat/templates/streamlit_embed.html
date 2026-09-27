@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot IA - Versión Streamlit</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0e1117;
+            font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header-bar {
+            height: 48px;
+            background-color: #161922;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .btn-back {
+            color: #ff4b4b;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .btn-back:hover {
+            color: #ff6b6b;
+            transform: translateX(-2px);
+        }
+
+        .status-text {
+            font-size: 0.8rem;
+            color: #9ca3af;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .status-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #10b981;
+            box-shadow: 0 0 8px #10b981;
+        }
+
+        iframe {
+            width: 100%;
+            flex: 1;
+            border: none;
+            background-color: #0e1117;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bar">
+        <a href="/" class="btn-back">
+            ← Volver al Chat Principal
+        </a>
+        <div class="status-text" id="statusText">
+            <span class="status-dot"></span>
+            <span>Conectando a Streamlit sobre puerto 8501...</span>
+        </div>
+    </div>
+    <iframe id="streamlitFrame" title="Chatbot IA Streamlit" src=""></iframe>
+
+    <script>
+        // Obtener dinámicamente la IP o dominio del host actual
+        const host = window.location.hostname;
+        const streamlitUrl = `http://${host}:8501/`;
+        document.getElementById('streamlitFrame').src = streamlitUrl;
+        document.getElementById('statusText').innerHTML = `<span class="status-dot"></span> <span>Streamlit Activo: ${host}:8501</span>`;
+    </script>
+</body>
+</html>
