@@ -4,6 +4,7 @@
 
 ## PORTADA
 
+- **Institución:** Universidad Privada Domingo Savio (UPDS)
 - **Título de la Actividad:** Actividad 5 - Desarrollo de un sistema de información genérico con CRUD e integración de IA local mediante Ollama y soporte dual con OpenAI
 - **Asignatura:** Programación IV
 - **Estudiante:** Ana Maribel Maydana
@@ -13,6 +14,7 @@
 - **Modelo de IA Local:** `invenbot` (derivado de `qwen2.5:0.5b` mediante Modelfile personalizado)
 - **Soporte IA en la Nube:** OpenAI API (`gpt-4o-mini` / `gpt-3.5-turbo`) mediante patrón Factory
 - **Subred de Despliegue:** `172.25.4.228/25` (Puerto Django: 8000)
+- **Repositorio Oficial en GitHub:** [https://github.com/AnaMaydana/programacion4](https://github.com/AnaMaydana/programacion4)
 
 ---
 
@@ -558,3 +560,31 @@ Destroying test database for alias 'default'...
 3. **Qwen Team (Alibaba Cloud) (2024):** *Qwen2.5: A Foundation Language Model Series*. arXiv preprint. Disponible en: [https://qwenlm.github.io/](https://qwenlm.github.io/)
 4. **OpenAI Platform Documentation (2026):** *Chat Completions API and Python SDK reference*. OpenAI. Disponible en: [https://platform.openai.com/docs/](https://platform.openai.com/docs/)
 5. **Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994):** *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley.
+
+---
+
+## 10. EVOLUCIÓN RECIENTE Y ESTADO FINAL DEL PROYECTO
+
+### 10.1 Pestaña Dedicada de Reportes Analíticos (`/reportes/`)
+En atención a los requerimientos de usabilidad y visualización ejecutiva, los 8 reportes predefinidos del **Patrón Strategy (RF-06)** evolucionaron de un modal flotante a una **pestaña y vista analítica completa** (`/reportes/`), integrada en el menú de navegación superior. La vista cuenta con:
+- **Resumen Financiero Global (KPIs):** Tarjetas con el valor total monetizado del inventario en Bolivianos, total de unidades físicas en almacén, catálogo de ítems y contador de alertas críticas.
+- **Barra de Selección de Estrategias:** Navegación por pestañas entre los 8 reportes con carga asíncrona mediante AJAX/Fetch hacia el endpoint `api/reportes/`.
+- **Selector de Modo en Precios Extremos (Top 1 vs. Top 5):** Tanto en el reporte de **Producto Más Caro** como en el de **Producto Más Barato**, el usuario puede alternar entre la ficha destacada individual o una tabla de **Ranking Top 5** con medallas e insignias de posición (1°, 2°, 3°, 4° y 5°), facilitando la toma de decisiones de compras y promociones.
+- **Filtros Reactivos por Chips de Categoría:** En el reporte **Por Categoría**, se presentan botones interactivos con el conteo de productos por departamento (`Todas las Categorías [50]`, `Abarrotes [10]`, `Bebidas [7]`, `Carnes [6]`, `Frutas [8]`, `Limpieza [7]`, `Lácteos [7]`, `Panadería [5]`). Al presionar cualquier chip, la tabla se actualiza al instante.
+- **Buscador en Tiempo Real:** Entrada de texto con filtrado reactivo del lado del cliente sobre las filas de la tabla activa.
+- **Exportación Tabular a CSV:** Generación dinámica de archivos `.csv` descargables desde el navegador con los datos del reporte seleccionado.
+- **Estilos de Impresión Optimizados:** Reglas `@media print` para generar copias físicas o guardar en PDF omitiendo barras de navegación y controles interactivos.
+
+### 10.2 Persistencia de Datos y Fixture de Inicialización (`seed_data.json`)
+Para garantizar que cualquier evaluador pueda reproducir el entorno sin tener que cargar datos manualmente, se exportó el catálogo completo de **50 productos** y las **7 categorías** en el fixture estándar `proyecto/seed_data.json` (69 KB). El sistema permite recargar toda la información mediante el comando:
+```bash
+python manage.py loaddata seed_data.json
+```
+Asimismo, el archivo de base de datos relacional `proyecto/db.sqlite3` se mantiene versionado con el inventario completo precargado.
+
+### 10.3 Repositorio Oficial en GitHub y Despliegue con SSH
+El código fuente completo del proyecto, su base de datos, migraciones, modelos, pruebas y documentación se encuentran publicados y sincronizados en el repositorio oficial de GitHub:
+- **URL del Repositorio:** [https://github.com/AnaMaydana/programacion4](https://github.com/AnaMaydana/programacion4)
+- **Rama Principal:** `main`
+- **Autenticación y Seguridad:** Configurado con llave criptográfica `ed25519` para despliegues directos sin transmisión de contraseñas en texto plano.
+- **Control de Versiones Limpio:** El repositorio excluye mediante `.gitignore` los entornos virtuales locales (`venv/`), archivos de caché compilado (`__pycache__/`) y variables de entorno privadas (`.env`), proveyendo `.env.example` para su fácil puesta en marcha.
