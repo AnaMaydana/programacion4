@@ -294,6 +294,32 @@ def reportes_vista(request):
         'resumen_inicial': resumen_inicial,
     })
 
+def api_producto_detalle(request, producto_id):
+    """
+    Endpoint API para consultar el detalle completo de un producto (Subpunto 1.3 - CRUD: Detalle).
+    """
+    producto = get_object_or_404(Producto, id=producto_id)
+    return JsonResponse({
+        'status': 'ok',
+        'producto': {
+            'id': producto.id,
+            'codigo': producto.codigo,
+            'nombre': producto.nombre,
+            'descripcion': producto.descripcion,
+            'categoria': producto.categoria.nombre,
+            'categoria_id': producto.categoria.id,
+            'precio': float(producto.precio),
+            'stock': producto.stock,
+            'stock_minimo': producto.stock_minimo,
+            'unidad_medida': producto.unidad_medida,
+            'estado': producto.estado,
+            'estado_stock': producto.estado_stock,
+            'fecha_registro': producto.fecha_registro.strftime('%d/%m/%Y %H:%M'),
+            'fecha_actualizacion': producto.fecha_actualizacion.strftime('%d/%m/%Y %H:%M'),
+            'valor_inventario': round(float(producto.precio * producto.stock), 2)
+        }
+    })
+
 @csrf_exempt
 def api_producto_crear(request):
     """

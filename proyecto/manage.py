@@ -7,6 +7,13 @@ import sys
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'chat.settings')
+    
+    # Auto-detección y carga transparente del entorno virtual local
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    venv_site = os.path.join(base_dir, 'venv', 'lib', f'python{sys.version_info.major}.{sys.version_info.minor}', 'site-packages')
+    if os.path.exists(venv_site) and venv_site not in sys.path:
+        sys.path.insert(0, venv_site)
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

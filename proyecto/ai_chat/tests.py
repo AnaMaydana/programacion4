@@ -129,6 +129,28 @@ class TestProductoCRUDYValidaciones(TestCase):
         self.producto.refresh_from_db()
         self.assertEqual(self.producto.stock, 15)  # El stock permanece inalterado
 
+    def test_consulta_detalle_producto(self):
+        """Verifica la consulta de detalle completo de un producto (Subpunto 1.3: Detalle)."""
+        response = self.client.get(reverse('api_producto_detalle', kwargs={'producto_id': self.producto.id}))
+        self.assertEqual(response.status_code, 200)
+        data = response.json()
+        self.assertEqual(data['status'], 'ok')
+        self.assertEqual(data['producto']['codigo'], 'LAC-001')
+        self.assertEqual(data['producto']['nombre'], 'Leche Entera 1L')
+        self.assertEqual(data['producto']['precio'], 6.50)
+        self.assertEqual(data['producto']['stock'], 20)
+        self.assertIn('valor_inventario', data['producto'])
+
+    def test_comando_generar_reporte(self):
+        """Verifica la ejecución del comando de reporte en terminal (Subpunto 1.4)."""
+        from io import StringIO
+        from django.core.management import call_command
+        out = StringIO()
+        call_command('generar_reporte', tipo='valor_total', stdout=out)
+        salida = out.getvalue()
+        self.assertIn('Valor Total', salida)
+        self.assertIn('[OK]', salida)
+
 
 class TestPatronStrategyReportes(TestCase):
     """

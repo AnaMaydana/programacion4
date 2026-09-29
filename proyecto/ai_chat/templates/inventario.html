@@ -500,6 +500,11 @@
             color: #6366f1;
         }
 
+        .btn-tbl-detail:hover {
+            border-color: #06b6d4;
+            color: #06b6d4;
+        }
+
         .btn-action-reportes {
             background: linear-gradient(135deg, #6366f1, #4f46e5);
             color: #ffffff;
@@ -1241,6 +1246,12 @@
                                         title="{% if p.estado %}Desactivar (Borrado lógico){% else %}Activar producto{% endif %}">
                                         {% if p.estado %}Desactivar{% else %}Activar{% endif %}
                                     </button>
+                                    <button class="btn-tbl-action btn-tbl-detail" 
+                                        type="button"
+                                        onclick="verDetalleProducto({{ p.id }})" 
+                                        title="Ver ficha técnica completa del producto (Subpunto 1.3: Detalle)">
+                                        Detalle
+                                    </button>
                                     <button class="btn-tbl-action btn-editar-prod" 
                                         type="button"
                                         data-id="{{ p.id }}"
@@ -1352,6 +1363,67 @@
             </form>
         </div>
     </div>
+
+    <!-- Modal para Ver Detalle del Producto (Subpunto 1.3: Detalle) -->
+    <div class="modal-backdrop" id="detailModal">
+        <div class="modal-card" style="max-width: 620px;">
+            <div class="modal-header">
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <span class="product-code" id="detCodigo" style="font-size:1rem; font-weight:700;"></span>
+                    <h3 class="modal-title" id="detNombre" style="margin:0; font-size:1.15rem;">Detalle del Producto</h3>
+                </div>
+                <button class="btn-modal-close" onclick="cerrarModalDetalle()">&times;</button>
+            </div>
+            <div class="modal-body" style="padding: 20px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px;">
+                    <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); font-weight:700; letter-spacing:0.04em;">Categoría</div>
+                        <div id="detCategoria" style="font-weight: 600; font-size: 0.95rem; margin-top: 4px; color:var(--text-primary);"></div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); font-weight:700; letter-spacing:0.04em;">Precio Oficial</div>
+                        <div id="detPrecio" class="price-tag" style="color: var(--primary); font-size: 1.15rem; margin-top: 4px;"></div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); font-weight:700; letter-spacing:0.04em;">Existencias Físicas</div>
+                        <div id="detStock" style="font-weight: 700; font-size: 1rem; margin-top: 4px; color:var(--text-primary);"></div>
+                        <div id="detStockMin" style="font-size: 0.78rem; color: var(--text-secondary); margin-top: 2px;"></div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); font-weight:700; letter-spacing:0.04em;">Valorización Total</div>
+                        <div id="detValor" class="price-tag" style="font-size: 1.1rem; margin-top: 4px; color:#10b981;"></div>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 16px;">
+                    <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); font-weight:700; margin-bottom: 6px; letter-spacing:0.04em;">Descripción General</div>
+                    <p id="detDescripcion" style="margin: 0; font-size: 0.9rem; color: var(--text-primary); line-height: 1.5;"></p>
+                </div>
+
+                <div style="display: flex; gap: 16px; margin-bottom: 16px; flex-wrap: wrap;">
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span style="font-size:0.82rem; color:var(--text-muted);">Situación de Stock:</span>
+                        <span id="detSituacion" class="stock-badge"></span>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span style="font-size:0.82rem; color:var(--text-muted);">Estado del Registro:</span>
+                        <span id="detEstado" class="stock-badge"></span>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px solid var(--border-color); padding-top: 12px; font-size: 0.78rem; color: var(--text-muted); display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px;">
+                    <span id="detFechaReg"></span>
+                    <span id="detFechaAct"></span>
+                </div>
+            </div>
+            <div class="modal-footer" style="display:flex; justify-content:flex-end;">
+                <button type="button" class="btn-secondary" onclick="cerrarModalDetalle()">Cerrar Ficha</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor Flotante de Notificaciones Toast (Mensajes de Éxito / Error) -->
+    <div id="toastContainer" style="position:fixed; bottom:24px; right:24px; z-index:9999; display:flex; flex-direction:column; gap:10px; pointer-events:none;"></div>
 
     <!-- Modal de Reportes Predefinidos (RF-06) con Patrón Strategy -->
     <div class="modal-backdrop" id="reportsModal">
@@ -1541,6 +1613,63 @@
             document.getElementById('productModal').classList.remove('show');
         }
 
+        // Sistema de Notificaciones Toast Dinámicas (Mensajes de Éxito / Error amigables)
+        function mostrarToast(tipo, mensaje) {
+            const cont = document.getElementById('toastContainer');
+            if (!cont) return;
+            const toast = document.createElement('div');
+            const colorBg = tipo === 'success' ? '#10b981' : (tipo === 'warning' ? '#f59e0b' : '#ef4444');
+            const icono = tipo === 'success' ? '✓' : (tipo === 'warning' ? '⚠' : '✕');
+            toast.style.cssText = `background:${colorBg}; color:#fff; padding:12px 18px; border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,0.35); font-size:0.88rem; font-weight:600; display:flex; align-items:center; gap:10px; pointer-events:auto; min-width:280px; max-width:420px; transition:opacity 0.3s ease;`;
+            toast.innerHTML = `<span style="font-size:1.1rem; font-weight:800;">${icono}</span><span>${mensaje}</span>`;
+            cont.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 350);
+            }, 3800);
+        }
+
+        // Ficha Técnica / Detalle Completo de Producto (Subpunto 1.3: Detalle)
+        async function verDetalleProducto(id) {
+            try {
+                const res = await fetch(`/api/productos/${id}/detalle/`);
+                const data = await res.json();
+                if (res.ok && data.status === 'ok') {
+                    const p = data.producto;
+                    document.getElementById('detCodigo').innerText = p.codigo;
+                    document.getElementById('detNombre').innerText = p.nombre;
+                    document.getElementById('detCategoria').innerText = p.categoria;
+                    document.getElementById('detPrecio').innerText = `Bs. ${p.precio.toFixed(2)}`;
+                    document.getElementById('detStock').innerText = `${p.stock} ${p.unidad_medida}`;
+                    document.getElementById('detStockMin').innerText = `Stock Mínimo de Alerta: ${p.stock_minimo} ${p.unidad_medida}`;
+                    document.getElementById('detValor').innerText = `Bs. ${p.valor_inventario.toFixed(2)}`;
+                    document.getElementById('detDescripcion').innerText = p.descripcion || 'Sin descripción detallada registrada para este artículo.';
+                    
+                    const sitEl = document.getElementById('detSituacion');
+                    sitEl.className = `stock-badge stock-${p.estado_stock}`;
+                    sitEl.innerText = p.estado_stock.charAt(0).toUpperCase() + p.estado_stock.slice(1);
+                    
+                    const estEl = document.getElementById('detEstado');
+                    estEl.className = p.estado ? 'badge-status-activo' : 'badge-status-inactivo';
+                    estEl.innerText = p.estado ? 'Activo en Catálogo' : 'Inactivo (Borrado Lógico)';
+                    
+                    document.getElementById('detFechaReg').innerText = `Registrado: ${p.fecha_registro}`;
+                    document.getElementById('detFechaAct').innerText = `Última Modificación: ${p.fecha_actualizacion}`;
+                    
+                    document.getElementById('detailModal').classList.add('show');
+                } else {
+                    mostrarToast('error', data.error || 'No fue posible cargar el detalle del producto.');
+                }
+            } catch (err) {
+                console.error(err);
+                mostrarToast('error', 'Error al obtener la información detallada del producto.');
+            }
+        }
+
+        function cerrarModalDetalle() {
+            document.getElementById('detailModal').classList.remove('show');
+        }
+
         // Guardar Producto (Crear o Editar vía API)
         async function guardarProducto(event) {
             event.preventDefault();
@@ -1597,15 +1726,16 @@
 
                 if (res.ok && data.status === 'ok') {
                     cerrarModalProducto();
-                    window.location.reload();
+                    mostrarToast('success', data.mensaje || 'Producto guardado exitosamente.');
+                    setTimeout(() => window.location.reload(), 600);
                 } else {
-                    alert(data.error || 'Error al procesar la operación');
+                    mostrarToast('error', data.error || 'Error al procesar la operación');
                     btnSubmit.disabled = false;
                     btnSubmit.innerText = originalText;
                 }
             } catch (err) {
                 console.error(err);
-                alert('Ocurrió un error al guardar el producto.');
+                mostrarToast('error', 'Ocurrió un error al guardar el producto.');
                 btnSubmit.disabled = false;
                 btnSubmit.innerText = originalText;
             }
@@ -1641,11 +1771,12 @@
                             btn.title = 'Activar producto';
                         }
                     }
+                    mostrarToast('success', data.mensaje || 'Estado actualizado.');
                 } else {
-                    alert(data.error || 'Error al cambiar estado.');
+                    mostrarToast('error', data.error || 'Error al cambiar estado.');
                 }
             } catch (e) {
-                alert('Error al comunicarse con el servidor.');
+                mostrarToast('error', 'Error al comunicarse con el servidor.');
             }
         }
 
@@ -1667,11 +1798,12 @@
                         badge.innerText = data.estado_stock.charAt(0).toUpperCase() + data.estado_stock.slice(1);
                     }
                     actualizarKpisEnVivo();
+                    mostrarToast('success', data.mensaje || 'Existencias actualizadas.');
                 } else {
-                    alert(data.error || 'No fue posible ajustar el stock.');
+                    mostrarToast('warning', data.error || 'No fue posible ajustar el stock.');
                 }
             } catch (e) {
-                alert('Error al actualizar existencias.');
+                mostrarToast('error', 'Error al actualizar existencias.');
             }
         }
 
@@ -1781,11 +1913,12 @@
                     const fila = document.getElementById(`row-prod-${id}`);
                     if (fila) fila.remove();
                     actualizarKpisEnVivo();
+                    mostrarToast('success', data.mensaje || `Producto "${nombre}" eliminado.`);
                 } else {
-                    alert(data.error || 'No se pudo eliminar el producto.');
+                    mostrarToast('error', data.error || 'No se pudo eliminar el producto.');
                 }
             } catch (err) {
-                alert('Error al comunicarse con el servidor.');
+                mostrarToast('error', 'Error al comunicarse con el servidor.');
             }
         }
 

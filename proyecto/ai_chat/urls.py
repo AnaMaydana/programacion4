@@ -16,7 +16,9 @@ urlpatterns = [
     path('api/sessions/<int:session_id>/delete/', views.api_delete_session, name='api_delete_session'),
     path('api/new-session/', views.api_new_session, name='api_new_session'),
     
-    # Endpoints CRUD de Productos (RF-01 a RF-04)
+    # Endpoints CRUD de Productos (RF-01 a RF-04, Subpunto 1.3: Lista, Detalle, Crear, Editar, Eliminar)
+    path('api/productos/<int:producto_id>/detalle/', views.api_producto_detalle, name='api_producto_detalle'),
+    path('productos/<int:producto_id>/', views.api_producto_detalle, name='producto_detalle'),
     path('api/productos/crear/', views.api_producto_crear, name='api_producto_crear'),
     path('api/productos/<int:producto_id>/editar/', views.api_producto_editar, name='api_producto_editar'),
     path('api/productos/<int:producto_id>/eliminar/', views.api_producto_eliminar, name='api_producto_eliminar'),

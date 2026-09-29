@@ -217,7 +217,7 @@ class OpenAIService:
     def __init__(self, api_key: str = None, model: str = None):
         self.api_key = api_key or os.getenv('OPENAI_API_KEY') or getattr(settings, 'OPENAI_API_KEY', '')
         self.model = model or os.getenv('OPENAI_MODEL', 'gpt-4o-mini')
-        self.api_url = "https://api.openai.com/v1/chat/completions"
+        self.api_url = os.getenv('OPENAI_API_URL', 'https://api.openai.com/v1/chat/completions')
 
     def verificar_disponibilidad(self) -> bool:
         return bool(self.api_key and len(self.api_key.strip()) > 10)
